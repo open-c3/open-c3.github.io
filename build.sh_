@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+./_code.sh
+
+test -d node_modules || tar -zxvf node_modules.tar.gz
+
+docker run --rm -v $PWD:/srv/gitbook-src --entrypoint /srv/gitbook-src/docker-entrypoint-build.sh khs1994/gitbook
