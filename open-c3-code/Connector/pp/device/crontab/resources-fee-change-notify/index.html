@@ -1,0 +1,3141 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title> 监控/资源配置变更通知  · OPEN-C3(open-c3)</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-versions-select/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-ad/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../../../../AGENT/monitor/push/" />
+    
+    
+    <link rel="prev" href="../../../mmon/node-alive/" />
+    
+
+    
+    <link rel="stylesheet" href="../../../../../../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../../../../../../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../../../../../../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"open-c3","type":"follow","size":"small","width":"180","count":true},{"user":"open-c3","repo":"open-c3","type":"star","size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../../../">
+            
+                <a href="../../../../../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../../../../其它资料/">
+            
+                <a href="../../../../../../其它资料/">
+            
+                    
+                    其它资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../../../../安装/">
+            
+                <a href="../../../../../../安装/">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../../../../体验版安装/">
+            
+                <a href="../../../../../../体验版安装/">
+            
+                    
+                    体验版
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../../../../单机版安装/">
+            
+                <a href="../../../../../../单机版安装/">
+            
+                    
+                    单机版
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../../../../../集群版安装/">
+            
+                <a href="../../../../../../集群版安装/">
+            
+                    
+                    集群版
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../../../../社区/">
+            
+                <a href="../../../../../../社区/">
+            
+                    
+                    社区
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../../../../../视频教程/">
+            
+                <a href="../../../../../../视频教程/">
+            
+                    
+                    视频教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../../../../../核心功能/">
+            
+                <a href="../../../../../../核心功能/">
+            
+                    
+                    核心功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../../../../../快速执行脚本/">
+            
+                <a href="../../../../../../快速执行脚本/">
+            
+                    
+                    快速执行脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../../../../../快速分发文件/">
+            
+                <a href="../../../../../../快速分发文件/">
+            
+                    
+                    快速分发文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../../../../../虚拟终端/">
+            
+                <a href="../../../../../../虚拟终端/">
+            
+                    
+                    虚拟终端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../../../../../文件发送/">
+            
+                <a href="../../../../../../文件发送/">
+            
+                    
+                    文件发送
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../../../../../作业任务/">
+            
+                <a href="../../../../../../作业任务/">
+            
+                    
+                    作业任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../../../../../定时任务/">
+            
+                <a href="../../../../../../定时任务/">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../../../../../../分组作业/">
+            
+                <a href="../../../../../../分组作业/">
+            
+                    
+                    分组作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../../../../../../流水线/">
+            
+                <a href="../../../../../../流水线/">
+            
+                    
+                    流水线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../../../../../../报告/">
+            
+                <a href="../../../../../../报告/">
+            
+                    
+                    报告
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../../../../../../监控/">
+            
+                <a href="../../../../../../监控/">
+            
+                    
+                    监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../../../../../进阶功能/">
+            
+                <a href="../../../../../../进阶功能/">
+            
+                    
+                    进阶功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../../../../../容器发布/">
+            
+                <a href="../../../../../../容器发布/">
+            
+                    
+                    容器发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../../../../../主机和容器混合发布/">
+            
+                <a href="../../../../../../主机和容器混合发布/">
+            
+                    
+                    主机和容器混合发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../../../../../资源编排/">
+            
+                <a href="../../../../../../资源编排/">
+            
+                    
+                    资源编排
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../../../../../轻应用/">
+            
+                <a href="../../../../../../轻应用/">
+            
+                    
+                    轻应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../../../../../应用群同时发布/">
+            
+                <a href="../../../../../../应用群同时发布/">
+            
+                    
+                    应用群同时发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../../../../../../演示广场/">
+            
+                <a href="../../../../../../演示广场/">
+            
+                    
+                    演示广场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../../../../../../私人节点/">
+            
+                <a href="../../../../../../私人节点/">
+            
+                    
+                    私人节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../../../../../../CDN刷新/">
+            
+                <a href="../../../../../../CDN刷新/">
+            
+                    
+                    CDN刷新
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../../../../../使用手册/">
+            
+                <a href="../../../../../../使用手册/">
+            
+                    
+                    使用手册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../../../../../AGENT安装和管理/">
+            
+                <a href="../../../../../../AGENT安装和管理/">
+            
+                    
+                    AGENT安装和管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../../../../../发起审批/">
+            
+                <a href="../../../../../../发起审批/">
+            
+                    
+                    发起审批
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../../../../../机器分批/">
+            
+                <a href="../../../../../../机器分批/">
+            
+                    
+                    机器分批
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../../../../../账户管理/">
+            
+                <a href="../../../../../../账户管理/">
+            
+                    
+                    账户管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../../../../../文件管理/">
+            
+                <a href="../../../../../../文件管理/">
+            
+                    
+                    文件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../../../../../../脚本管理/">
+            
+                <a href="../../../../../../脚本管理/">
+            
+                    
+                    脚本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../../../../../../机器分组/">
+            
+                <a href="../../../../../../机器分组/">
+            
+                    
+                    机器分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../../../../../../机器管理/">
+            
+                <a href="../../../../../../机器管理/">
+            
+                    
+                    机器管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../../../../../../报警通知/">
+            
+                <a href="../../../../../../报警通知/">
+            
+                    
+                    报警通知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../../../../../../查看变量/">
+            
+                <a href="../../../../../../查看变量/">
+            
+                    
+                    查看变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../../../../../../内建插件/">
+            
+                <a href="../../../../../../内建插件/">
+            
+                    
+                    内建插件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.11.1" data-path="../../../../../../kubectl/">
+            
+                <a href="../../../../../../kubectl/">
+            
+                    
+                    kubectl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11.2" data-path="../../../../../../terraform/">
+            
+                <a href="../../../../../../terraform/">
+            
+                    
+                    terraform
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11.3" data-path="../../../../../../kubestar.v2/">
+            
+                <a href="../../../../../../kubestar.v2/">
+            
+                    
+                    kubestar.v2(推荐)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11.4" data-path="../../../../../../kubestar/">
+            
+                <a href="../../../../../../kubestar/">
+            
+                    
+                    kubestar(不推荐)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11.5" data-path="../../../../../../awsecs/">
+            
+                <a href="../../../../../../awsecs/">
+            
+                    
+                    awsecs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11.6" data-path="../../../../../../sendemail/">
+            
+                <a href="../../../../../../sendemail/">
+            
+                    
+                    sendemail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11.7" data-path="../../../../../../sendmesg/">
+            
+                <a href="../../../../../../sendmesg/">
+            
+                    
+                    sendmesg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11.8" data-path="../../../../../../flowcaller/">
+            
+                <a href="../../../../../../flowcaller/">
+            
+                    
+                    flowcaller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11.9" data-path="../../../../../../cdnrefresh/">
+            
+                <a href="../../../../../../cdnrefresh/">
+            
+                    
+                    cdnrefresh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11.10" data-path="../../../../../../tsunamiudp/">
+            
+                <a href="../../../../../../tsunamiudp/">
+            
+                    
+                    tsunamiudp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11.11" data-path="../../../../../../calltestenv/">
+            
+                <a href="../../../../../../calltestenv/">
+            
+                    
+                    calltestenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11.12" data-path="../../../../../../localbash/">
+            
+                <a href="../../../../../../localbash/">
+            
+                    
+                    localbash
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../../../../../../票据/">
+            
+                <a href="../../../../../../票据/">
+            
+                    
+                    票据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.13" data-path="../../../../../../收藏夹/">
+            
+                <a href="../../../../../../收藏夹/">
+            
+                    
+                    收藏夹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14" data-path="../../../../../../连接器/">
+            
+                <a href="../../../../../../连接器/">
+            
+                    
+                    连接器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.14.1" data-path="../../../../../../设置连接器/">
+            
+                <a href="../../../../../../设置连接器/">
+            
+                    
+                    设置连接器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14.2" data-path="../../../../../../用户管理/">
+            
+                <a href="../../../../../../用户管理/">
+            
+                    
+                    用户管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14.3" data-path="../../../../../../权限管理/">
+            
+                <a href="../../../../../../权限管理/">
+            
+                    
+                    权限管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14.4" data-path="../../../../../../服务树节点管理/">
+            
+                <a href="../../../../../../服务树节点管理/">
+            
+                    
+                    服务树节点管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14.5" data-path="../../../../../../服务树资源管理/">
+            
+                <a href="../../../../../../服务树资源管理/">
+            
+                    
+                    服务树资源管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14.6" data-path="../../../../../../给我的邮件/">
+            
+                <a href="../../../../../../给我的邮件/">
+            
+                    
+                    给我的邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.14.7" data-path="../../../../../../给我的短信/">
+            
+                <a href="../../../../../../给我的短信/">
+            
+                    
+                    给我的短信
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.15" data-path="../../../../../../构建触发脚本/">
+            
+                <a href="../../../../../../构建触发脚本/">
+            
+                    
+                    构建触发脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.16" data-path="../../../../../../流水线多种代码来源/">
+            
+                <a href="../../../../../../流水线多种代码来源/">
+            
+                    
+                    流水线多种代码来源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.17" data-path="../../../../../../客户端内置命令/">
+            
+                <a href="../../../../../../客户端内置命令/">
+            
+                    
+                    客户端内置命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.18" data-path="../../../../../../我的镜像/">
+            
+                <a href="../../../../../../我的镜像/">
+            
+                    
+                    我的镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.19" data-path="../../../../../../作业变量/">
+            
+                <a href="../../../../../../作业变量/">
+            
+                    
+                    作业变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.20" data-path="../../../../../../管理员/">
+            
+                <a href="../../../../../../管理员/">
+            
+                    
+                    管理员
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.20.1" data-path="../../../../../../通知管理/">
+            
+                <a href="../../../../../../通知管理/">
+            
+                    
+                    通知管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.20.2" data-path="../../../../../../模版管理/">
+            
+                <a href="../../../../../../模版管理/">
+            
+                    
+                    模版管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.20.3" data-path="../../../../../../监控信息/">
+            
+                <a href="../../../../../../监控信息/">
+            
+                    
+                    监控信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.20.4" data-path="../../../../../../审计日志/">
+            
+                <a href="../../../../../../审计日志/">
+            
+                    
+                    审计日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.20.5" data-path="../../../../../../轻应用/">
+            
+                <a href="../../../../../../轻应用/">
+            
+                    
+                    轻应用配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.20.6" data-path="../../../../../../地址簿管理/">
+            
+                <a href="../../../../../../地址簿管理/">
+            
+                    
+                    地址簿管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.20.7" data-path="../../../../../../私有节点管理/">
+            
+                <a href="../../../../../../私有节点管理/">
+            
+                    
+                    私有节点管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../../../../../设计理念/">
+            
+                <a href="../../../../../../设计理念/">
+            
+                    
+                    设计理念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../../../../../关于连接器/">
+            
+                <a href="../../../../../../关于连接器/">
+            
+                    
+                    关于连接器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../../../../../关于持续运营/">
+            
+                <a href="../../../../../../关于持续运营/">
+            
+                    
+                    关于持续运营
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../../../../../关于AGENT特性/">
+            
+                <a href="../../../../../../关于AGENT特性/">
+            
+                    
+                    关于AGENT特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../../../../../../关于内建插件/">
+            
+                <a href="../../../../../../关于内建插件/">
+            
+                    
+                    关于内建插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../../../../../维护/">
+            
+                <a href="../../../../../../维护/">
+            
+                    
+                    维护
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../../../../../维护升级/">
+            
+                <a href="../../../../../../维护升级/">
+            
+                    
+                    维护升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../../../../../系统监控/">
+            
+                <a href="../../../../../../系统监控/">
+            
+                    
+                    系统监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../../../../../版本升级/">
+            
+                <a href="../../../../../../版本升级/">
+            
+                    
+                    版本升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../../../../../../聚云连接器/">
+            
+                <a href="../../../../../../聚云连接器/">
+            
+                    
+                    聚云连接器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../../../../../FAQ/">
+            
+                <a href="../../../../../../FAQ/">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../../../../../服务相关/">
+            
+                <a href="../../../../../../服务相关/">
+            
+                    
+                    服务相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../../../../../通知模版可用变量/">
+            
+                <a href="../../../../../../通知模版可用变量/">
+            
+                    
+                    通知模版可用变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../../../../../开发手册/">
+            
+                <a href="../../../../../../开发手册/">
+            
+                    
+                    开发手册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../../../../docs/code-commit.html">
+            
+                <a href="../../../../../docs/code-commit.html">
+            
+                    
+                     1代码提交/提交分支 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../../../../../docs/automatic-packaging.html">
+            
+                <a href="../../../../../docs/automatic-packaging.html">
+            
+                    
+                     1代码提交/自动构建 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../../../dtool/todo.html">
+            
+                <a href="../../../dtool/todo.html">
+            
+                    
+                     2TODO/1.说明 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../../../../../c3todo.html">
+            
+                <a href="../../../../../c3todo.html">
+            
+                    
+                     2TODO/2.列表 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../../../mmon/crontab/ali-pai/">
+            
+                <a href="../../../mmon/crontab/ali-pai/">
+            
+                    
+                     阿里云/PAI/报告 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../../../../../docs/nginx-allow.html">
+            
+                <a href="../../../../../docs/nginx-allow.html">
+            
+                    
+                     安全/访问控制 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../../../agenti/">
+            
+                <a href="../../../agenti/">
+            
+                    
+                     安装/Agent/批量安装&升级 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../../../../../Installer/scripts/single/v2.6.1.html">
+            
+                <a href="../../../../../Installer/scripts/single/v2.6.1.html">
+            
+                    
+                     版本说明/v2.6.1 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../../../../bl/proxy/">
+            
+                <a href="../../../../bl/proxy/">
+            
+                    
+                     堡垒机/代理服务 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../../../bl-ext/">
+            
+                <a href="../../../bl-ext/">
+            
+                    
+                     堡垒机/权限添加 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../../../../../AGENT/device/conf/baoleiji.html">
+            
+                <a href="../../../../../AGENT/device/conf/baoleiji.html">
+            
+                    
+                     堡垒机说明 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.12" data-path="../../../../../CI/cci/">
+            
+                <a href="../../../../../CI/cci/">
+            
+                    
+                     常见的CI构建镜像 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.13" data-path="../../../../../docs/faq.html">
+            
+                <a href="../../../../../docs/faq.html">
+            
+                    
+                     常见问题 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.14" data-path="../../../cloud/">
+            
+                <a href="../../../cloud/">
+            
+                    
+                     当前支持的公有云 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.15" data-path="../../../../../JOB/lib/api/to3part/approval.html">
+            
+                <a href="../../../../../JOB/lib/api/to3part/approval.html">
+            
+                    
+                     第三方接口/审批 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.16" data-path="../../../../lib/api/to3part.html">
+            
+                <a href="../../../../lib/api/to3part.html">
+            
+                    
+                     第三方接口/用户 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.17" data-path="../../../thirdparty/keycloak/">
+            
+                <a href="../../../thirdparty/keycloak/">
+            
+                    
+                     第三方应用/keycloak 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.18" data-path="../../../mci/ci-code-merge/">
+            
+                <a href="../../../mci/ci-code-merge/">
+            
+                    
+                     发布过程中支持代码自动合并 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.19" data-path="../../../../../docs/flow-cicd.html">
+            
+                <a href="../../../../../docs/flow-cicd.html">
+            
+                    
+                     发布流程对接到第三方系统 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.20" data-path="../../../../../docs/multi-change-tree-name.html">
+            
+                <a href="../../../../../docs/multi-change-tree-name.html">
+            
+                    
+                     服务树/批量修改服务树名称 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.21" data-path="../../../treex/door.html">
+            
+                <a href="../../../treex/door.html">
+            
+                    
+                     服务树外部连接器 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.22" data-path="../../../base/tree-edit.html">
+            
+                <a href="../../../base/tree-edit.html">
+            
+                    
+                     服务树/整理 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.23" data-path="../bind-tree-from-outside/">
+            
+                <a href="../bind-tree-from-outside/">
+            
+                    
+                     服务树资源挂载同步 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.24" data-path="../../buildintree/">
+            
+                <a href="../../buildintree/">
+            
+                    
+                     服务树自动绑定/内置服务树 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.25" data-path="../../../mmon/alertmanagercrontab/">
+            
+                <a href="../../../mmon/alertmanagercrontab/">
+            
+                    
+                     告警屏蔽/每天固定时间屏蔽 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.26" data-path="../../../../../AGENT/device/conf/region.html">
+            
+                <a href="../../../../../AGENT/device/conf/region.html">
+            
+                    
+                     公有云/区域编码 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.27" data-path="../../../../../AGENT/device/conf/authorization.html">
+            
+                <a href="../../../../../AGENT/device/conf/authorization.html">
+            
+                    
+                     公有云/权限说明 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.28" data-path="../../../../../AGENT/device/conf/template/">
+            
+                <a href="../../../../../AGENT/device/conf/template/">
+            
+                    
+                     公有云/文档 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.29" data-path="../../../../../Installer/C3/cloudeye-exporter/">
+            
+                <a href="../../../../../Installer/C3/cloudeye-exporter/">
+            
+                    
+                     构建/cloudeye采集器 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.30" data-path="../../../../../Installer/C3/tencentcloud-exporter/">
+            
+                <a href="../../../../../Installer/C3/tencentcloud-exporter/">
+            
+                    
+                     构建/tencentcloud采集器 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.31" data-path="../../dump-cmdb-summary-cvs/">
+            
+                <a href="../../dump-cmdb-summary-cvs/">
+            
+                    
+                     获取CMDB数据导出 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.32" data-path="../../../../../docs/cluster.html">
+            
+                <a href="../../../../../docs/cluster.html">
+            
+                    
+                     集群版部署 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.33" data-path="../../../../../AGENT/cloudmon/exporter/aliyun-exporter/">
+            
+                <a href="../../../../../AGENT/cloudmon/exporter/aliyun-exporter/">
+            
+                    
+                     监控采集器/云监控/阿里云 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.34" data-path="../../../../../AGENT/cloudmon/exporter/cloudeye-exporter/">
+            
+                <a href="../../../../../AGENT/cloudmon/exporter/cloudeye-exporter/">
+            
+                    
+                     监控采集器/云监控/华为云 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.35" data-path="../../../../../AGENT/cloudmon/exporter/tencentcloud-cache-exporter/">
+            
+                <a href="../../../../../AGENT/cloudmon/exporter/tencentcloud-cache-exporter/">
+            
+                    
+                     监控采集器/云监控/腾讯云cache 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.36" data-path="../../../../../AGENT/cloudmon/exporter/tencentcloud-exporter/">
+            
+                <a href="../../../../../AGENT/cloudmon/exporter/tencentcloud-exporter/">
+            
+                    
+                     监控采集器/云监控/腾讯云 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.37" data-path="../../../../../AGENT/cloudmon/exporter/cloudwatch-exporter/">
+            
+                <a href="../../../../../AGENT/cloudmon/exporter/cloudwatch-exporter/">
+            
+                    
+                     监控采集器/云监控/AWS 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.38" data-path="../../../../../AGENT/cloudmon/exporter/google-stackdriver-exporter/">
+            
+                <a href="../../../../../AGENT/cloudmon/exporter/google-stackdriver-exporter/">
+            
+                    
+                     监控采集器/云监控/google 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.39" data-path="../../../../../AGENT/cloudmon/exporter/elasticsearch-exporter/">
+            
+                <a href="../../../../../AGENT/cloudmon/exporter/elasticsearch-exporter/">
+            
+                    
+                     监控采集器/elasticsearch 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.40" data-path="../../../../../AGENT/cloudmon/exporter/kube-state-metrics-v2/">
+            
+                <a href="../../../../../AGENT/cloudmon/exporter/kube-state-metrics-v2/">
+            
+                    
+                     监控采集器/kube-state-metrics-v2 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.41" data-path="../../../../../AGENT/cloudmon/exporter/metrics/">
+            
+                <a href="../../../../../AGENT/cloudmon/exporter/metrics/">
+            
+                    
+                     监控采集器/metrics 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.42" data-path="../../../../../AGENT/cloudmon/exporter/prometheus-federate/">
+            
+                <a href="../../../../../AGENT/cloudmon/exporter/prometheus-federate/">
+            
+                    
+                     监控采集器/prometheus-federate 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.43" data-path="../../../mmon/resourcelow/dump/">
+            
+                <a href="../../../mmon/resourcelow/dump/">
+            
+                    
+                     监控/获取资源监控表格 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.44" data-path="../../../mmon/exmesg/">
+            
+                <a href="../../../mmon/exmesg/">
+            
+                    
+                     监控/监控告警转发 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.45" data-path="../../../mmon/exalarm/">
+            
+                <a href="../../../mmon/exalarm/">
+            
+                    
+                     监控/监控扩展 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.46" data-path="../../../../../AGENT/monitor/">
+            
+                <a href="../../../../../AGENT/monitor/">
+            
+                    
+                     监控/开发新资源监控的步骤 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.47" data-path="../../../mmon/migrate/from-falcon/">
+            
+                <a href="../../../mmon/migrate/from-falcon/">
+            
+                    
+                     监控迁移/从falcon迁移到Open-C3 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.48" data-path="../../../mmon/migrate/alarm-subscription/">
+            
+                <a href="../../../mmon/migrate/alarm-subscription/">
+            
+                    
+                     监控迁移/告警订阅迁移 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.49" data-path="../../../mmon/migrate/user-addr/">
+            
+                <a href="../../../mmon/migrate/user-addr/">
+            
+                    
+                     监控迁移/迁移告警接收人信息 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.50" data-path="../../../mmon/migrate/alarm-group/">
+            
+                <a href="../../../mmon/migrate/alarm-group/">
+            
+                    
+                     监控迁移/迁移告警组 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.51" data-path="../../../../../AGENT/scripts/installAgentMonFalconMigrate.html">
+            
+                <a href="../../../../../AGENT/scripts/installAgentMonFalconMigrate.html">
+            
+                    
+                     监控迁移/数据与falcon兼容 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.52" data-path="../../../mmon/migrate/tree-unmonitor/">
+            
+                <a href="../../../mmon/migrate/tree-unmonitor/">
+            
+                    
+                     监控迁移/unmonitor服务树 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.53" data-path="../../../../../docs/metrics_push_by_pod.html">
+            
+                <a href="../../../../../docs/metrics_push_by_pod.html">
+            
+                    
+                     监控/容器中的pod上传监控数据 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.54" data-path="../../../mmon/http-monitor/">
+            
+                <a href="../../../mmon/http-monitor/">
+            
+                    
+                     监控/业务入口监控 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.55" data-path="../../../mmon/node-alive/">
+            
+                <a href="../../../mmon/node-alive/">
+            
+                    
+                     监控/主机宕机监控 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12.56" data-path="./">
+            
+                <a href="./">
+            
+                    
+                     监控/资源配置变更通知 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.57" data-path="../../../../../AGENT/monitor/push/">
+            
+                <a href="../../../../../AGENT/monitor/push/">
+            
+                    
+                     监控/自定义push指标 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.58" data-path="../../../../../AGENT/agent.mon/">
+            
+                <a href="../../../../../AGENT/agent.mon/">
+            
+                    
+                     监控AGENT版本说明 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.59" data-path="../../../mmon/crontab/ali-pai-alarm/">
+            
+                <a href="../../../mmon/crontab/ali-pai-alarm/">
+            
+                    
+                     监控/ali-pai任务监控 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.60" data-path="../../../../../AGENT/monitor/blackbox-exporter/">
+            
+                <a href="../../../../../AGENT/monitor/blackbox-exporter/">
+            
+                    
+                     监控/blackbox 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.61" data-path="../../../../../AGENT/monitor/fping/">
+            
+                <a href="../../../../../AGENT/monitor/fping/">
+            
+                    
+                     监控/fping 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.62" data-path="../../../../../grafana/config/">
+            
+                <a href="../../../../../grafana/config/">
+            
+                    
+                     监控/grafana/邮件配置 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.63" data-path="../../../../../docs/monitor/mongodb.html">
+            
+                <a href="../../../../../docs/monitor/mongodb.html">
+            
+                    
+                     监控/mongodb不同的exporter说明 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.64" data-path="../../../../../AGENT/monitor/mongodb-query/">
+            
+                <a href="../../../../../AGENT/monitor/mongodb-query/">
+            
+                    
+                     监控/MongodbQuery 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.65" data-path="../../../../../AGENT/monitor/mysql-query/">
+            
+                <a href="../../../../../AGENT/monitor/mysql-query/">
+            
+                    
+                     监控/MysqlQuery 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.66" data-path="../../../../../prometheus/config/fping-v2/">
+            
+                <a href="../../../../../prometheus/config/fping-v2/">
+            
+                    
+                     监控/ping监控 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.67" data-path="../../../../../AGENT/monitor/redis-query/">
+            
+                <a href="../../../../../AGENT/monitor/redis-query/">
+            
+                    
+                     监控/RedisQuery 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.68" data-path="../../../dtool/">
+            
+                <a href="../../../dtool/">
+            
+                    
+                     开发调试辅助工具 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.69" data-path="../../../../../tools/bf/">
+            
+                <a href="../../../../../tools/bf/">
+            
+                    
+                     开发工具/根据提交ID编译前端代码 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.70" data-path="../../../../../docs/web-dev.html">
+            
+                <a href="../../../../../docs/web-dev.html">
+            
+                    
+                     开发环境/前端开发 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.71" data-path="../../../../../c3-front/">
+            
+                <a href="../../../../../c3-front/">
+            
+                    
+                     开发环境/前端 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.72" data-path="../../../../../docs/connector-link.html">
+            
+                <a href="../../../../../docs/connector-link.html">
+            
+                    
+                     连接器/对接 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.73" data-path="../../../../config.ini/">
+            
+                <a href="../../../../config.ini/">
+            
+                    
+                     连接器配置说明 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.74" data-path="../../../bpm/action/update-resource-tags/">
+            
+                <a href="../../../bpm/action/update-resource-tags/">
+            
+                    
+                     批量更新标签说明 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.75" data-path="../../../../../docs/maintain.html">
+            
+                <a href="../../../../../docs/maintain.html">
+            
+                    
+                     迁移/把C3从集群中迁移到单机版 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.76" data-path="../../../../../docs/migration.html">
+            
+                <a href="../../../../../docs/migration.html">
+            
+                    
+                     迁移/从联合使用切换到独立使用 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.77" data-path="../../../../tt/migration.html">
+            
+                <a href="../../../../tt/migration.html">
+            
+                    
+                     迁移/工单数据 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.78" data-path="../../../diff/cmdb/">
+            
+                <a href="../../../diff/cmdb/">
+            
+                    
+                     迁移/数据对比/资源绑定关系对比 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.79" data-path="../../../../migrate/">
+            
+                <a href="../../../../migrate/">
+            
+                    
+                     迁移/C3服务 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.80" data-path="../../../../../c3-front/src/assets/js/">
+            
+                <a href="../../../../../c3-front/src/assets/js/">
+            
+                    
+                     前端引用文件 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.81" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                     设置c3维修状态 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.82" data-path="../../../../../docs/https.html">
+            
+                <a href="../../../../../docs/https.html">
+            
+                    
+                     使用https 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.83" data-path="../../../dbcheck/">
+            
+                <a href="../../../dbcheck/">
+            
+                    
+                     数据检查 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.84" data-path="../../../../data/">
+            
+                <a href="../../../../data/">
+            
+                    
+                     数据库表结构更新 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.85" data-path="../../../spotx/door.html">
+            
+                <a href="../../../spotx/door.html">
+            
+                    
+                     弹性伸缩/spotx 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.86" data-path="../../../../bl/permission/jumpserver/">
+            
+                <a href="../../../../bl/permission/jumpserver/">
+            
+                    
+                     通过jumpserver添加服务器访问权限 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.87" data-path="../../../../../AGENT/scripts/juyuntree/">
+            
+                <a href="../../../../../AGENT/scripts/juyuntree/">
+            
+                    
+                     外部服务树缓存 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.88" data-path="../../../treesync/">
+            
+                <a href="../../../treesync/">
+            
+                    
+                     系统迁移/同步服务树绑定关系 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.89" data-path="../../../dbfix/door.html">
+            
+                <a href="../../../dbfix/door.html">
+            
+                    
+                     系统修正/纠正数据 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.90" data-path="../../../crontask/">
+            
+                <a href="../../../crontask/">
+            
+                    
+                     系统CronTask 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.91" data-path="../../../../../docs/mesg.html">
+            
+                <a href="../../../../../docs/mesg.html">
+            
+                    
+                     消息出口规范 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.92" data-path="../../../../../tools/pd/">
+            
+                <a href="../../../../../tools/pd/">
+            
+                    
+                     性能优化/perl/开发工具 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.93" data-path="../../../../../Installer/scripts/httpload/">
+            
+                <a href="../../../../../Installer/scripts/httpload/">
+            
+                    
+                     压测工具 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.94" data-path="../../../../../AGENT/c3demoslave/">
+            
+                <a href="../../../../../AGENT/c3demoslave/">
+            
+                    
+                     演示环境虚拟节点 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.95" data-path="../../../../../docs/aws-ami.html">
+            
+                <a href="../../../../../docs/aws-ami.html">
+            
+                    
+                     应用市场/AWSmarketplace 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.96" data-path="../../../../../tools/pr/">
+            
+                <a href="../../../../../tools/pr/">
+            
+                    
+                     自动测试/pr自动测试机器人 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.97" data-path="../../../../../AGENT/agent.mon/perl_patch/">
+            
+                <a href="../../../../../AGENT/agent.mon/perl_patch/">
+            
+                    
+                     Agent/perl模块管理 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.98" data-path="../../../../../docs/api.html">
+            
+                <a href="../../../../../docs/api.html">
+            
+                    
+                     API/1.接口规范 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.99" data-path="../../../../../api.html">
+            
+                <a href="../../../../../api.html">
+            
+                    
+                     API/文档 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.100" data-path="../../../../../JOB/bpm/plugin.html">
+            
+                <a href="../../../../../JOB/bpm/plugin.html">
+            
+                    
+                     BPM/插件配置说明 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.101" data-path="../../../bpm/action/approval/">
+            
+                <a href="../../../bpm/action/approval/">
+            
+                    
+                     BPM/插件说明/approval 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.102" data-path="../../../tt/">
+            
+                <a href="../../../tt/">
+            
+                    
+                     BPM工单流程通知 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.103" data-path="../../../bpm/special_encoding.html">
+            
+                <a href="../../../bpm/special_encoding.html">
+            
+                    
+                     BPM/特殊编码说明 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.104" data-path="../../../../../Installer/C3/pkg/">
+            
+                <a href="../../../../../Installer/C3/pkg/">
+            
+                    
+                     C3的pkg打包说明 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.105" data-path="../../../../../docs/lotus.html">
+            
+                <a href="../../../../../docs/lotus.html">
+            
+                    
+                     C3镜像 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.106" data-path="../../../../../c3mcdoc.html">
+            
+                <a href="../../../../../c3mcdoc.html">
+            
+                    
+                     C3MC/文档 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.107" data-path="../../../../../docs/ci-dns.html">
+            
+                <a href="../../../../../docs/ci-dns.html">
+            
+                    
+                     CI/流水线构建过程使用自建DNS 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.108" data-path="../../../../../CI/cislave/conf/">
+            
+                <a href="../../../../../CI/cislave/conf/">
+            
+                    
+                     CI/cislave说明 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.109" data-path="../../synctags/">
+            
+                <a href="../../synctags/">
+            
+                    
+                     CMDB/把tags同步到云上 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.110" data-path="../../fee/">
+            
+                <a href="../../fee/">
+            
+                    
+                     CMDB/费用计算 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.111" data-path="../../../service-analysis/nginx/">
+            
+                <a href="../../../service-analysis/nginx/">
+            
+                    
+                     CMDB/服务分析/nginx 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.112" data-path="../../../../../docs/cmdb/outline.html">
+            
+                <a href="../../../../../docs/cmdb/outline.html">
+            
+                    
+                     CMDB/概要字段说明 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.113" data-path="../../../cloud/extend-sync/">
+            
+                <a href="../../../cloud/extend-sync/">
+            
+                    
+                     CMDB/扩展同步 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.114" data-path="../../../../../AGENT/device/conf/tree.html">
+            
+                <a href="../../../../../AGENT/device/conf/tree.html">
+            
+                    
+                     CMDB/默认服务树 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.115" data-path="../../../../../AGENT/device/bin/protect.html">
+            
+                <a href="../../../../../AGENT/device/bin/protect.html">
+            
+                    
+                     CMDB同步保护 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.116" data-path="../../../../../AGENT/device/conf/account.html">
+            
+                <a href="../../../../../AGENT/device/conf/account.html">
+            
+                    
+                     CMDB/云账号导入 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.117" data-path="../ssl-certificate-expired-notify/">
+            
+                <a href="../ssl-certificate-expired-notify/">
+            
+                    
+                     CMDB/证书过期提醒 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.118" data-path="../../../spotx/">
+            
+                <a href="../../../spotx/">
+            
+                    
+                     EKS弹性伸缩支持大Pod算法 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.119" data-path="../../../../../Installer/C3/pkg/install-cache/">
+            
+                <a href="../../../../../Installer/C3/pkg/install-cache/">
+            
+                    
+                     Installer/C3/pkg/install-cache 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.120" data-path="../../../../../JOB/tools/">
+            
+                <a href="../../../../../JOB/tools/">
+            
+                    
+                     JOB/任务说明 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.121" data-path="../../../../../prometheus/image/">
+            
+                <a href="../../../../../prometheus/image/">
+            
+                    
+                     prometheus镜像构建 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../../../.." > 监控/资源配置变更通知 </a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x76D1;&#x63A7;&#x8D44;&#x6E90;&#x914D;&#x7F6E;&#x53D8;&#x66F4;&#x901A;&#x77E5;"><b>1. </b>&#x76D1;&#x63A7;/&#x8D44;&#x6E90;&#x914D;&#x7F6E;&#x53D8;&#x66F4;&#x901A;&#x77E5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;&#x65B9;&#x5F0F;"><b>1.1. </b>&#x4F7F;&#x7528;&#x65B9;&#x5F0F;</a></li></ul></ul></div><a href="#&#x76D1;&#x63A7;&#x8D44;&#x6E90;&#x914D;&#x7F6E;&#x53D8;&#x66F4;&#x901A;&#x77E5;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x76D1;&#x63A7;&#x8D44;&#x6E90;&#x914D;&#x7F6E;&#x53D8;&#x66F4;&#x901A;&#x77E5;"><a name="&#x76D1;&#x63A7;&#x8D44;&#x6E90;&#x914D;&#x7F6E;&#x53D8;&#x66F4;&#x901A;&#x77E5;" class="anchor-navigation-ex-anchor" href="#&#x76D1;&#x63A7;&#x8D44;&#x6E90;&#x914D;&#x7F6E;&#x53D8;&#x66F4;&#x901A;&#x77E5;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x76D1;&#x63A7;/&#x8D44;&#x6E90;&#x914D;&#x7F6E;&#x53D8;&#x66F4;&#x901A;&#x77E5;</h1>
+<pre><code>&#x4E3A;&#x4E86;&#x5BF9;&#x670D;&#x52A1;&#x5668;&#x6210;&#x672C;&#x8FDB;&#x884C;&#x6709;&#x6548;&#x7684;&#x7BA1;&#x7406;&#xFF0C;&#x9700;&#x8981;&#x77E5;&#x9053;&#x6240;&#x6709;&#x914D;&#x7F6E;&#x53D8;&#x66F4;&#x7684;&#x60C5;&#x51B5;&#x3002;
+
+&#x6709;&#x7684;&#x4E91;&#x5E73;&#x53F0;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x81EA;&#x52A8;&#x6269;&#x5BB9;&#xFF0C;&#x5F53;&#x8D44;&#x6E90;&#x4E0D;&#x8DB3;&#x65F6;&#xFF0C;&#x5E73;&#x53F0;&#x4F1A;&#x5BF9;&#x8D44;&#x6E90;&#x8FDB;&#x884C;&#x81EA;&#x52A8;&#x6269;&#x5BB9;&#x3002;
+
+&#x5F53;&#x8D44;&#x6E90;&#x914D;&#x7F6E;&#x53D8;&#x66F4;&#x65F6;&#xFF0C;Open-C3&#x4F1A;&#x53D1;&#x51FA;&#x901A;&#x77E5;&#x3002;
+</code></pre><h2 id="&#x4F7F;&#x7528;&#x65B9;&#x5F0F;"><a name="&#x4F7F;&#x7528;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x4F7F;&#x7528;&#x65B9;&#x5F0F;</h2>
+<pre><code>&#x5728;Open-C3&#x7684;&#x5730;&#x5740;&#x7C3F;&#x4E2D;&#x6DFB;&#x52A0;open-c3-fee&#x8FD9;&#x4E2A;&#x7528;&#x6237;&#x3002;&#x7CFB;&#x7EDF;&#x4F1A;&#x9ED8;&#x8BA4;&#x7ED9;&#x8FD9;&#x4E2A;&#x7528;&#x6237;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x3002;
+</code></pre><footer class="page-footer"><span class="copyright">Copyright 2020 - 2020. all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2025-04-12 23:35:05
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../../../mmon/node-alive/" class="navigation navigation-prev " aria-label="Previous page:  监控/主机宕机监控 ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../../../../AGENT/monitor/push/" class="navigation navigation-next " aria-label="Next page:  监控/自定义push指标 ">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":" 监控/资源配置变更通知 ","level":"1.12.56","depth":2,"next":{"title":" 监控/自定义push指标 ","level":"1.12.57","depth":2,"path":"open-c3-code/AGENT/monitor/push/README.md","ref":"open-c3-code/AGENT/monitor/push/README.md","articles":[]},"previous":{"title":" 监控/主机宕机监控 ","level":"1.12.55","depth":2,"path":"open-c3-code/Connector/pp/mmon/node-alive/README.md","ref":"open-c3-code/Connector/pp/mmon/node-alive/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","versions-select","splitter","tbfed-pagefooter","expandable-chapters-small","sectionx","github-buttons","simple-page-toc","anchors","alerts","emphasize","anchor-navigation-ex","ad","ace","favicon","mermaid","terminal","github","copy-code-button","-sharing","sharing-plus","chart"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright 2020 - 2020.","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"emphasize":{},"ad":{"contentBottom":"","contentTop":""},"ace":{},"github":{"url":"https://github.com/open-c3"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"mermaid":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"versions-select":{"type":"branches"},"fontsettings":{"theme":"white","family":"serif","size":1},"sectionx":{"tag":"b"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"alerts":{},"github-buttons":{"buttons":[{"user":"open-c3","type":"follow","size":"small","width":"180","count":true},{"user":"open-c3","repo":"open-c3","type":"star","size":"small"}]},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"contact":"lijinfeng2011@gmail.com"},"title":"OPEN-C3(open-c3)","gitbook":"*"},"file":{"path":"open-c3-code/Connector/pp/device/crontab/resources-fee-change-notify/README.md","mtime":"2025-04-12T15:35:05.876Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-04-12T15:35:08.126Z"},"basePath":"../../../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-versions-select/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-ad/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
