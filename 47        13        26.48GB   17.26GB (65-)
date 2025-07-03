@@ -1,0 +1,1572 @@
+[33mcommit 54f2ee016233a4c157dee8d42fe551c91904980c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Jan 13 10:01:45 2025 +0800
+
+    更新README.md
+
+[33mcommit 8fde1a5cef93878aa1d7da9cb75b21337bcbeee5[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Dec 20 23:56:04 2024 +0800
+
+    如果指定路径下有node_modules文件则进行拷贝
+
+[33mcommit 3d104f113c7e7129def41ab7306cb8929061d11d[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Dec 20 23:03:51 2024 +0800
+
+    修改脚本兼容macOS
+
+[33mcommit 94d721e971ddc5da38d96e1d35854cc309a3f9fa[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Aug 10 20:49:58 2024 +0800
+
+    添加workflows代码自动同步到gitee
+
+[33mcommit 691571bc305427becce8ef6218c862bde6750cd5[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Aug 9 18:12:21 2024 +0800
+
+    修改用户指南说明
+
+[33mcommit 808a731afd86391d227b006d5183875517e7c60b[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Aug 9 17:40:48 2024 +0800
+
+    添加用户指南的文档下载说明
+
+[33mcommit b484794829f1c3026258bea173bdc2e9e095c4c6[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Jul 5 15:42:28 2024 +0800
+
+    添加统一的命令入口 upgrade.sh
+
+[33mcommit 0e533ba65abf86b50eec726d8a087dd793233cc3[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Jul 24 14:03:04 2023 +0800
+
+    优化build.sh
+
+[33mcommit 3836a1183a201bae3131f3b60040c3265de07c8d[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Jul 24 12:06:36 2023 +0800
+
+    f - 修复代码处理工具
+
+[33mcommit 8685410d2e44daf6b38c6d0b7702d9ff17ec1868[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Jul 20 10:25:05 2023 +0800
+
+    生成code中的文档时，删除软链，它会影响正常构建
+
+[33mcommit c27e155d682342971b02d1bbae90791ee6137a6b[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Jun 9 21:52:25 2023 +0800
+
+    单机版安装后，不再需要更新服务
+
+[33mcommit 688e5b1167cc609d53e9f7feb7135dd533518791[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Jun 8 22:02:39 2023 +0800
+
+    把需要网络访问的js和css放到本地
+
+[33mcommit 649014314125197e0141f419e257eef4baefdbc3[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu May 4 17:32:28 2023 +0800
+
+    细化_pip_变量的用法
+
+[33mcommit d0aaca5844177b5623f28668c19bf13e9e672d54[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sun Apr 23 12:02:38 2023 +0800
+
+    删除测试转生产的文档，key可以自动旋转，不需要关于这个key的说明了
+
+[33mcommit e36ebe5a6216a0ee4eb1270870c3f25d79529c81[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Mar 3 16:40:35 2023 +0800
+
+    添加todo自动生成
+
+[33mcommit b09e82629a789fcd99b3e0efda31959bfa4c9517[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Feb 27 18:45:02 2023 +0800
+
+    添加c3mc 编辑链接
+
+[33mcommit 605d5519ad90f246b586846e08cf98dfc0c968c2[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Feb 27 17:19:23 2023 +0800
+
+    添加c3mc文档自动生成
+
+[33mcommit 9fdac98933c287831d249c2443cf7e49e5235ba1[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sun Feb 19 00:41:18 2023 +0800
+
+    从代码中提取的文档，如果标题是 /x 结尾，则进行屏蔽
+
+[33mcommit 4b6e9032e51e8795175993f1362d1b099f7e5555[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Feb 18 15:29:52 2023 +0800
+
+    开发环境文档迁移
+
+[33mcommit 5ac6c92705e7c762b9ba081c0832656dd2cb5eec[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Feb 18 14:46:36 2023 +0800
+
+    添加init脚本
+
+[33mcommit 819f97d20d34b8fe548f834586241dab6282ce9b[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Feb 17 21:20:00 2023 +0800
+
+    fix
+
+[33mcommit fbf01b4c4b4c5c062a875d9f37e4666bfafc03da[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Feb 17 21:18:52 2023 +0800
+
+    每天自动构建
+
+[33mcommit 4600d43a6703781016bc41e6e481e87c96369a78[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Feb 17 18:05:25 2023 +0800
+
+    删除人工维护的API文档
+
+[33mcommit 3d36516fa047141a86c578d87f36ef38c256173d[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Feb 17 17:35:39 2023 +0800
+
+    更新dtool-apidoc，自动排序
+
+[33mcommit 7d0061908e39d21c5b13f5bc80ec976b35667564[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Feb 16 14:31:54 2023 +0800
+
+    更新apidoc make 工具
+
+[33mcommit cd12ec27a03a793ef77b4046b227f1969a967479[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Feb 15 20:27:36 2023 +0800
+
+    更新 apidoc-make-onece
+
+[33mcommit 42adb156b2a983e77b1250709eb8791ecb363512[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Feb 15 15:37:51 2023 +0800
+
+    自动提取接口中的pod信息到文档中
+
+[33mcommit 45e90f179170c91a05b128c951d2dd5bc09477df[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Feb 10 16:45:45 2023 +0800
+
+    添加Open-C3介绍-2023.pdf
+
+[33mcommit f2884dfe329a23b78f53b923b8a53eb8133cf072[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Feb 3 11:45:14 2023 +0800
+
+    开发手册去掉入口的README.md
+
+[33mcommit 355e8d803f10825d5e6415a618233b203fc9e1ef[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Feb 2 19:38:50 2023 +0800
+
+    生成开发手册时,使用文件中的标题作为菜单内容
+
+[33mcommit b847cdbd427d7e398d78488d2279a2eb7a84e2b6[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Feb 2 18:23:56 2023 +0800
+
+    从主代码中自动生成开发手册的内容
+
+[33mcommit 66cc0cb2ca1abe2d0c2f131601ec7286f7a1b56f[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Feb 2 17:43:35 2023 +0800
+
+    添加开发手册
+
+[33mcommit 75ec5a7831106d272e5e509ee447d5a21fb1175c[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Feb 2 16:53:23 2023 +0800
+
+    把book的build和serve放到容器中
+
+[33mcommit 4eda69072f36e36b807d586fb37c1feaf7e0e44e[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Oct 27 19:04:32 2022 +0800
+
+    添加手写版本发布的说明
+
+[33mcommit 11824306f0969b8b5b377198893f258611ecbc73[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sun Oct 23 20:13:30 2022 +0800
+
+    添加_pip_环境变量的说明
+
+[33mcommit 7c1b3d1f601b2b4dbffc3390d5cf23bfc43e486f[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Aug 16 16:44:05 2022 +0800
+
+    修改权限点说明
+
+[33mcommit 779bc52f7c17eca69d5a9911d460eac0ad37d9cf[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jul 19 14:37:59 2022 +0800
+
+    添加c3安装器部分说明
+
+[33mcommit 501823d14ebe0b1fc6c9b0a7aeb08b57aa0c2f6f[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Jul 18 12:21:27 2022 +0800
+
+    添加k8s监控截图
+
+[33mcommit 5fec641e0948c482bba13715bea31905a23266eb[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Jul 18 11:51:08 2022 +0800
+
+    更新单机版安装文档
+
+[33mcommit 7df53aa84570ce946d5e1cd7f235e1fe29e07325[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Jul 18 10:50:27 2022 +0800
+
+    更新单机版安装文档
+
+[33mcommit 54e152afe731b209d983bb4ff3aa39509c1fdc10[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Jul 15 12:07:45 2022 +0800
+
+    添加localbash作业插件说明
+
+[33mcommit aeea9188539507713f561eceaf2fbe21e85c88c4[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Jul 15 12:02:40 2022 +0800
+
+    添加calltestenv作业插件说明
+
+[33mcommit da7981f047830c280f018251612b5ec4fda5b0b5[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Jul 1 12:14:22 2022 +0800
+
+    添加前端开发通过docker启动的方式的说明
+
+[33mcommit 2695ab13944c4f79dd77443253fc63044539a5d4[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sun May 8 23:04:08 2022 +0800
+
+    添加版本信息到v2.6.0的描述
+
+[33mcommit 4a093d070880754325a802c84959859ff518d65b[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sun May 8 21:48:30 2022 +0800
+
+    更新单机版安装命令
+
+[33mcommit 53b767e14ba5979239ecca7d183e94a94362078b[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Apr 27 14:19:57 2022 +0800
+
+    添加 通知模版可用变量 说明
+
+[33mcommit a00262fead0ceafc7c00d426953d9e47d5ea455a[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Apr 27 14:19:09 2022 +0800
+
+    添加连接器语音接口说明
+
+[33mcommit 1df14186b0c4e98bf0f393cc3424bb5ad6dcdc68[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Mar 4 19:10:17 2022 +0800
+
+    更新版本路线图
+
+[33mcommit 237b645d8ad2f2d4f9fa0ef8b80135cb99ece683[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Mar 3 15:32:34 2022 +0800
+
+    添加通用数据盘监控策略描述
+
+[33mcommit 2933ab159b8fde6d073838b613f20033d2013212[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Mar 2 11:10:54 2022 +0800
+
+    添加redis监控策略描述
+
+[33mcommit 3c324d46c9b57da5eae1b2b16f6becacf5c44931[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Feb 19 18:02:44 2022 +0800
+
+    添加监控
+
+[33mcommit 350ce3c0a36c4ed198667bb095220ce662bab2f7[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Jan 10 11:56:51 2022 +0800
+
+    修改tsunamiudp
+
+[33mcommit fcd917d8a6d9cef9add8ecaf77901908b173fa45[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jan 8 17:25:27 2022 +0800
+
+    添加tsunamiudp说明
+
+[33mcommit 39c24fec4c1cc78f8842b78153241c22df576b12[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Dec 31 16:19:07 2021 +0800
+
+    添加审批内容可用变量
+
+[33mcommit 05e89cda56daa5160c46a647e39278d0b8f24f5e[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Dec 27 19:32:28 2021 +0800
+
+    添加审批模版说明
+
+[33mcommit bfc061342f1f54d5451e86f1f0038033f26e0d1f[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Dec 27 18:11:22 2021 +0800
+
+    修改审批插件变量
+
+[33mcommit 052445da491971d968b46dc098022b1887973ead[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Dec 15 18:33:37 2021 +0800
+
+    修改自动升级的时间说明
+
+[33mcommit 7d8551a26663aa88a32c27bbd39979b1b36189d8[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Dec 15 18:29:36 2021 +0800
+
+    修改Open-C3版本路线图
+
+[33mcommit cae97c13deb206f3fe1c24704784d89b3192c4d7[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Dec 15 11:17:44 2021 +0800
+
+    添加v2.2.1 到v2.3.1的升级方式说明
+
+[33mcommit 3fe264152e6e88737658d64e2db7b01eef4f4b60[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Dec 14 19:54:55 2021 +0800
+
+    补充v2.3.1升级到v2.3.2的说明
+
+[33mcommit af6e7d70bbee9c8fd31c1d692941d6e0a2d9922f[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Dec 14 19:51:25 2021 +0800
+
+    添加v2.3.1升级到v2.3.2的说明
+
+[33mcommit 2d9da3732ba2c92e4c9d14324477cc2847f27278[m
+Author: 李锦丰 <lijinfeng2011@gmail.com>
+Date:   Fri Dec 10 20:18:38 2021 +0800
+
+    Added Open-C3版本路线.drawio.png
+
+[33mcommit c4604fa7c7e0c4fa6d37d8dc4706b09c123847ae[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Dec 10 19:53:17 2021 +0800
+
+    添加单机版本的自动升级说明
+
+[33mcommit 687dc07ff179fef0b7243241317a2300caa4f494[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Dec 10 19:46:50 2021 +0800
+
+    添加v2.3.1版本升级说明
+
+[33mcommit 80963440225201c856a0e116160cb914c80480f9[m
+Author: 李锦丰 <lijinfeng2011@gmail.com>
+Date:   Fri Dec 10 18:56:42 2021 +0800
+
+    Added Open-C3版本路线.drawio.png
+
+[33mcommit 1be7faffa0b9f975a8815c4acfdabad77533d98a[m
+Author: 李锦丰 <lijinfeng2011@gmail.com>
+Date:   Fri Dec 10 18:53:47 2021 +0800
+
+    edit Open-C3版本路线.drawio.png
+
+[33mcommit 5f5e2e173970a4fc998b5c0c12f8e3c26c08cfd3[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Dec 10 18:46:01 2021 +0800
+
+    添加API文档
+
+[33mcommit d467045a4678baed15438c733978ee15a761c905[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Dec 10 18:44:08 2021 +0800
+
+    添加OPENC3的版本说明
+
+[33mcommit 9b98de7e34a4b2f8126abe1a28f8495103fe406e[m
+Author: 李锦丰 <lijinfeng2011@gmail.com>
+Date:   Fri Dec 10 18:28:12 2021 +0800
+
+    Added Open-C3版本路线.drawio.png
+
+[33mcommit 70d176ce1897709ee9a0d3fb67721925effeb486[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Aug 20 18:51:15 2021 +0800
+
+    修改集群版安装中域名的问题说明
+
+[33mcommit a991b2ddbf9f3f1b0277f2ffc8b1ea1a12cf34c9[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Aug 17 11:59:05 2021 +0800
+
+    修改介绍页，添加作业平台样式
+
+[33mcommit 92cfd0172fe4207dded84e56d9bfe2e50c423ef0[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Aug 17 10:36:23 2021 +0800
+
+    更新deploy.sh脚本
+
+[33mcommit 37232bf18bad9ceaf376f4f832ced1548d1bd9ab[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Aug 17 10:35:54 2021 +0800
+
+    连接器添加服务树释放时接口的说明
+
+[33mcommit b5c03194305ce8eb4bb0c22b58a6bd13a04acd1c[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Aug 14 18:15:56 2021 +0800
+
+    社区中添加irc聊天室信息
+
+[33mcommit 65e61b72214d9ad860bf75205348eca0221171bf[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Aug 14 15:26:05 2021 +0800
+
+    添加.gitattributes
+
+[33mcommit 0ec70b6aa0bb6b6fdd7fe189ac9551ca1de61a1d[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Aug 2 20:29:27 2021 +0800
+
+    添加安装错误的常见问题
+
+[33mcommit 3d940be3aee79c9c9cd58e6b0927452fa9943894[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jul 31 21:32:10 2021 +0800
+
+    修改awscli安装说明
+
+[33mcommit 268390199755e18b7f51c458e09004ccb9999c56[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jul 31 21:05:02 2021 +0800
+
+    删除LWP::Protocol::https的说明部分
+
+[33mcommit 8617eed79e2a334f7f1032f62ce0e923e15e1dea[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jul 31 20:36:07 2021 +0800
+
+    修改安装说明
+
+[33mcommit 583f4e428e32f8fe10cd6ce912476b31394213aa[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jul 31 19:57:18 2021 +0800
+
+    默认版本从v2.1.1改成v2.2.0
+
+[33mcommit 4b188c03223c4988e9fa3c9cacd7f1b75306f7ba[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jul 31 18:48:28 2021 +0800
+
+    版本升级添加数据库从5.5升级到5.7的说明
+
+[33mcommit bf49c528748135e0a45c1f8e4e1ba40ff6e9d1fc[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jul 31 16:32:28 2021 +0800
+
+    修改集群版安装，添加mysql版本需求描述
+
+[33mcommit 3d213bb9ef39883275dae3f93f87dbfe234606ce[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jul 31 16:00:05 2021 +0800
+
+    修改更多视频到简书专题
+
+[33mcommit 9276a579979cff915af153c2aa4ca387c3138a48[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jul 31 15:36:07 2021 +0800
+
+    把聊天室改成微信
+
+[33mcommit bcf05e3cdd5e10a253f005fd7778c64dcdb8dd59[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jul 27 14:42:11 2021 +0800
+
+    视频教程部分转到简书中
+
+[33mcommit c38b731c7b94ee3b39ae662be11da015f0e35e0a[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Jul 26 17:40:13 2021 +0800
+
+    修改README.md
+
+[33mcommit 437041a94262819155d385d40fdf17f74e238e01[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Jul 26 17:32:52 2021 +0800
+
+    添加对接juyunlifang的视频教程
+
+[33mcommit 3b96bb8f2020a47dfb83dbec9d26e8519fbca831[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jul 21 15:40:54 2021 +0800
+
+    更新deploy.sh脚本，对应上book的新提交号
+
+[33mcommit be950151aadeb1e2955387316ef0fa877c891589[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jul 21 15:39:51 2021 +0800
+
+    地址簿操作添加审计
+
+[33mcommit d4a7f96eb5255eed8186a1868f514c8409f61099[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jul 20 14:51:42 2021 +0800
+
+    介绍头部添加聊天室链接
+
+[33mcommit 674651203e4001ac74df85fa1c05d9a58bc21482[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Jul 19 17:06:38 2021 +0800
+
+    更新社区描述
+
+[33mcommit 5d68a3d25a5beee53b8ab0db2a2edcf10f405df1[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Jul 19 14:56:00 2021 +0800
+
+    首页添加聊天室历史链接
+
+[33mcommit 901752fe5a004bb30fa31ab772480737bc6611ac[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Jul 19 10:31:05 2021 +0800
+
+    添加社区说明
+
+[33mcommit 4a7d5e78890bce047f2120f2a00e62716bc7254b[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jul 17 17:56:25 2021 +0800
+
+    添加体验版视频演示
+
+[33mcommit 7c1c5ae59509ab8153798a912595f27436b57518[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jul 17 14:58:07 2021 +0800
+
+    添加体验版说明
+
+[33mcommit fc0d081b07da8259b6cc304ad36e23ef81809ce2[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Jul 16 21:53:02 2021 +0800
+
+    修改单机版安装说明
+
+[33mcommit f605ccce2851dd2f678c66ecef8188bc98723aaa[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Jul 15 15:15:12 2021 +0800
+
+    添加单机版一键安装说明
+
+[33mcommit d29ab9ccfb2f406d8228fbeb9f6e0244a26062c3[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jul 7 21:19:36 2021 +0800
+
+    流水线代码源允许为阿里云镜像源
+
+[33mcommit c72696b24a5b59051b79096e240e7805cb9f9d1e[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jul 6 17:33:32 2021 +0800
+
+    修改awsecs图片
+
+[33mcommit a438b8bdd9b1fd37bfd289ce2742a7c8abf9ecb9[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jul 6 17:18:57 2021 +0800
+
+    修改awsecr_push_image.pl说明
+
+[33mcommit 99a60bfe030f4fa79e2e089eef90acbab56ec176[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Jul 5 19:57:51 2021 +0800
+
+    添加流水线代码来源的描述
+
+[33mcommit 26f4e62554c80496339335d4087619b9eed3224e[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Jul 5 19:45:36 2021 +0800
+
+    流水线代码来源添加harbor类型
+
+[33mcommit 7e13c733e7ed24ec36fff4e10fd5eaa7b08ee045[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jul 3 11:40:55 2021 +0800
+
+    添加CDN刷新的文档
+
+[33mcommit acd0aad018a153ef20440998581e389c1a686011[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Jul 2 17:05:39 2021 +0800
+
+    审校完成
+
+[33mcommit 0939b204272ad611ea00ab7fe3f3d2e9202399f6[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Jul 1 20:46:35 2021 +0800
+
+    审校完成到连接器
+
+[33mcommit 1fd4a78db8dd035a91c72d5d82a14726b7af10f8[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 30 18:15:47 2021 +0800
+
+    添加设计理念
+
+[33mcommit 2f810929e8c13e74a94949579362c4d6e4913c46[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sun Jun 27 13:47:08 2021 +0800
+
+    修改管理员
+
+[33mcommit 656266d500989474384639cf6f3d943f4e12d90c[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sun Jun 27 13:34:25 2021 +0800
+
+    添加连接器
+
+[33mcommit 4130d3347940777b3351f2abc6db5e0617f4e44c[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sun Jun 27 00:37:10 2021 +0800
+
+    添加收藏夹
+
+[33mcommit e851b5484721c493d9a5ff2b53a633a55787ea85[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sun Jun 27 00:26:47 2021 +0800
+
+    修改票据
+
+[33mcommit ec1f353acd4520e8500ba3a090d29379688c2f9d[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jun 26 23:47:16 2021 +0800
+
+    添加简介
+
+[33mcommit 2ce7a66ee90ca84afc420808aa1b47328be290e6[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jun 26 23:22:13 2021 +0800
+
+    修改机器分组
+
+[33mcommit 363c63763185ef9e7ddd9ebafe519648f4dd5a65[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jun 26 23:20:54 2021 +0800
+
+    更新脚本管理
+
+[33mcommit 71f09b0a7ab0edd3d0e5c81081fdab05c18c97c7[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jun 26 23:16:28 2021 +0800
+
+    更新账户管理
+
+[33mcommit 25a9d5350febdf49a43f18c47ffb6a72551b9a64[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jun 26 22:59:53 2021 +0800
+
+    删除作用管理
+
+[33mcommit 3afb22a36cfb9d26b13ae9244b95800ab420a0bf[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jun 26 22:56:56 2021 +0800
+
+    更新发起审批
+
+[33mcommit f65d8cb2d21f021ad7316f7bbfd3d50f7e42243e[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jun 26 22:43:58 2021 +0800
+
+    更新AGENT安装和管理
+
+[33mcommit 7dbde0415e64ef769650e315c227d9ca036f7f75[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jun 26 22:35:05 2021 +0800
+
+    更新使用手册
+
+[33mcommit ab0570cfdfc7e1346a5b7e126d3619adce05ddcc[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Jun 26 22:27:19 2021 +0800
+
+    私人节点说明
+
+[33mcommit d9fad41a3cf0d85c3e9b841766f8667d7e54a343[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Jun 25 18:04:45 2021 +0800
+
+    添加演示广场说明
+
+[33mcommit b6455b99b9b5ad45e9bfc77db6f2db978698390c[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Jun 25 17:38:58 2021 +0800
+
+    添加应用群同时发布的说明
+
+[33mcommit 9961617f9f9c21934dd6a1dc8aa5d553a1551068[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Jun 25 17:35:45 2021 +0800
+
+    在内建插件页添加flowcaller说明
+
+[33mcommit 98e4e6de7758abe3db927d085e27dd2e6c5e4733[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Jun 25 17:35:01 2021 +0800
+
+    添加flowcaller说明
+
+[33mcommit 2dbf770900505f251b200db8ad3e38e57109f680[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Jun 25 14:52:06 2021 +0800
+
+    修改轻应用说明
+
+[33mcommit bf7e5bbadfffa145046e1e5f4410e220080921f3[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Jun 25 14:34:55 2021 +0800
+
+    调整进阶功能菜单顺序
+
+[33mcommit 465b2bdc5c44f2489335060adb3c00ffca2e0fc7[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Jun 25 14:30:40 2021 +0800
+
+    添加主机和容器混合发布的说明
+
+[33mcommit 04462c602b0cd4986588a7dd3dc5d03102c5cc39[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Jun 25 12:13:41 2021 +0800
+
+    添加容器发布的说明
+
+[33mcommit 423be6899701843f95a837445e16e58c56701a2b[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Jun 25 11:52:18 2021 +0800
+
+    添加资源编排的说明
+
+[33mcommit 26e8254d34ab7a2cc45440b65c0d2aff53d9020c[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 23 20:27:20 2021 +0800
+
+    添加报告说明
+
+[33mcommit ed766d875ff3f77206bbcc5eff76e5b0e0d875ca[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 23 19:54:53 2021 +0800
+
+    移动轻应用位置
+
+[33mcommit 6cc2660509b1b27824483955ccf7ec2ae82ad9b9[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 23 19:54:02 2021 +0800
+
+    编辑流水线说明
+
+[33mcommit 39019d511db533e071d898d23c8491e3c86d052e[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 23 19:48:07 2021 +0800
+
+    修改分组作业说明
+
+[33mcommit 7bc1fe5bc080038dd41b78ceae637f4e1d689fcc[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 23 17:48:26 2021 +0800
+
+    修改定时任务说明
+
+[33mcommit 0e208fd269a0b8b860f3b0e043486e7e15f39d3f[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 23 17:33:49 2021 +0800
+
+    移动分组作业功能到核心功能分类中
+
+[33mcommit fafd67d574c30da27a85336496d3184721a8c1d8[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 23 17:30:42 2021 +0800
+
+    添加作业任务说明
+
+[33mcommit 5712753db090e3f0061ecb912715f34ed9ea2f91[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 23 16:46:40 2021 +0800
+
+    修改文件发送说明
+
+[33mcommit 83b86bd6c9f155bdef7574fb9906bd83a1fa5047[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 23 16:26:22 2021 +0800
+
+    修改虚拟终端说明
+
+[33mcommit d7f12c6ff9a8b65bfd4a2335c3d014d60cbdb118[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 23 16:06:01 2021 +0800
+
+    给快速执行脚本和快速分发文件添加简介
+
+[33mcommit 60c8845194559096a71de70d2d684579680004b1[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 23 15:58:30 2021 +0800
+
+    添加进阶功能菜单
+
+[33mcommit a598b1bd7e6d29f4450e4f491cab5341078c81ed[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 23 15:55:40 2021 +0800
+
+    修改文件管理说明
+
+[33mcommit e23a6b689b82882cfb974da6ae763c264a355286[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 23 14:50:27 2021 +0800
+
+    修改快速分发文件说明
+
+[33mcommit abfa530651b7616f7680b00946e12e75a0dee4bd[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 23 14:18:06 2021 +0800
+
+    修改机器分组说明
+
+[33mcommit 4abfcbaf9b94196dfb9d58263ee04abfb435a598[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 23 14:16:24 2021 +0800
+
+    修改账户管理说明
+
+[33mcommit 3e4d6677fbc39f17b1d9cdbcc70285f09f9a12da[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Jun 23 14:12:21 2021 +0800
+
+    修改内建插件说明
+
+[33mcommit dc8abf8104e1cb2db08b58e44829ca03692e7d90[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jun 22 20:16:59 2021 +0800
+
+    修改内建插件说明
+
+[33mcommit e6433e74b54f62e6579437ad121f035f386c4d6e[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jun 22 20:10:50 2021 +0800
+
+    修改脚本管理说明
+
+[33mcommit f921dc5c2988b5b1299e49d7f62c9ebe6b2d19cc[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jun 22 20:05:32 2021 +0800
+
+    完善AGENT安装和代理部分的文档
+
+[33mcommit efd41d7e5686e85a0eec4c1b650fae69b081e5bf[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jun 22 19:46:45 2021 +0800
+
+    修改机器管理的说明
+
+[33mcommit e508199306c9ebc623c58948f970f609019c4b99[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jun 22 19:30:23 2021 +0800
+
+    添加服务树节点管理说明
+
+[33mcommit e79dc31c6e2b6b4bf0b8c933abb5c43a36b6a2d6[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jun 22 18:00:01 2021 +0800
+
+    添加服务树资源管理说明
+
+[33mcommit fb4572d6c6f6a4a913371fe201086a244a2504cd[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jun 22 17:40:28 2021 +0800
+
+    重新优化了快速执行脚本的说明
+
+[33mcommit 071613417be2a35c630d69b495766576efa1d365[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jun 22 16:18:58 2021 +0800
+
+    调整目录结构，把部分页面归类到核心功能
+
+[33mcommit 33963bcd23fa60996bf0bea8d6b566891a7a080e[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jun 22 16:15:18 2021 +0800
+
+    修改安装说明
+
+[33mcommit aca44c2e246f09677a9b8624665636bf5ff08663[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jun 22 15:39:35 2021 +0800
+
+    核心功能单独提出
+
+[33mcommit dba428e653127cca1fe95a930108676dae7ca9e6[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jun 22 15:24:43 2021 +0800
+
+    添加核心功能介绍页
+
+[33mcommit 739e55ace7b84a45f2340145aaa37c94283f91be[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Jun 22 15:20:22 2021 +0800
+
+    添加版本升级说明
+
+[33mcommit 3298e7c35ed41ae1bd2501a543f93c398c574b4d[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 31 20:17:43 2021 +0800
+
+    修改首页
+
+[33mcommit 735630419fa697d9282098c944ebdefa81b76043[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 31 20:13:39 2021 +0800
+
+    添加地址簿管理说明
+
+[33mcommit 71ddd188c32e0363432fa23327601619b9707ba0[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 31 20:03:30 2021 +0800
+
+    添加轻应用配置说明
+
+[33mcommit cd9c7a3aecbf6653a56ee9409b49c45d515fe4c1[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 31 20:02:31 2021 +0800
+
+    升级sql优化
+
+[33mcommit de7406bd12958cecf54423eaa298f5276140247d[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 31 17:58:37 2021 +0800
+
+    添加监控信息说明
+
+[33mcommit 9b331bcc256a4942bbc164f7058a038714d98b17[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 31 17:51:21 2021 +0800
+
+    添加模版管理说明
+
+[33mcommit 44b397dd6f1030660ae411d4e58a9acdcab53ea6[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 31 17:43:55 2021 +0800
+
+    添加通过管理说明
+
+[33mcommit 0e8d09b8ef9e798e34647fd6e99fdd0a241d0d3e[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 31 17:30:04 2021 +0800
+
+    修改管理员导航菜单
+
+[33mcommit 1bd883b90862f8903b355f3ffe47445dd4cb9a56[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 31 17:26:13 2021 +0800
+
+    添加管理员说明
+
+[33mcommit 9f8a65dc650b245ccfeec8fcdfdab2d99bc4a9a5[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 31 17:23:09 2021 +0800
+
+    更新kubectl说明
+
+[33mcommit a10642a1f92b681395e73d48f3f4405ca5c4f873[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 31 16:51:15 2021 +0800
+
+    添加私有节点管理说明
+
+[33mcommit e43428c78d77409f0e169bfdcd9f0fe90687b95d[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 31 16:33:36 2021 +0800
+
+    添加发消息插件的说明
+
+[33mcommit cd5595a46540869781d66a28c4f7b31a3c7d4f41[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 31 16:31:04 2021 +0800
+
+    添加sendmesg插件说明
+
+[33mcommit 27f7e4f86603eeed9c6e6cb8684571556678e8fb[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 31 15:58:11 2021 +0800
+
+    添加作业变量说明
+
+[33mcommit e0a0a5ccf2b260139706130802dd4c41287587c0[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 31 11:32:49 2021 +0800
+
+    添加连接器依赖模块说明
+
+[33mcommit 17b01059c84fa758a4e9abcb62f354f7f2957967[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri May 28 19:58:38 2021 +0800
+
+    添加版本升级sql
+
+[33mcommit f03d58e0988f237ec0d2617735dd46849778bc3d[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu May 27 15:35:36 2021 +0800
+
+    修改升级sql的语句
+
+[33mcommit 870414ecb6d5d2df3772d7703a1c120f138ff166[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu May 27 15:27:41 2021 +0800
+
+    添加版本升级sql
+
+[33mcommit 556911e4c5533677d5c25b119489239a4d32e316[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue May 25 22:03:01 2021 +0800
+
+    修改发起审批说明
+
+[33mcommit 5f16dfce59dd940ceb192ae5bb38fdba7e0dce78[m
+Merge: 91881f9 9177af8
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue May 25 21:54:41 2021 +0800
+
+    Merge branch 'main' of https://github.com/open-c3/book into main
+
+[33mcommit 91881f9ba1415f2a52ceb3a14f36a1bb6a116fe1[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue May 25 21:54:06 2021 +0800
+
+    版本升级添加sql
+
+[33mcommit 9177af88150208b5fb7bb82bc898fff9e27aad1a[m
+Author: 786967951 <786967951@qq.com>
+Date:   Tue May 25 21:07:06 2021 +0800
+
+    添加审批内容可以使用变量的说明
+
+[33mcommit 6830a2950a20ab7be87ec95aeaa2eb0c29ed2ea1[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue May 25 15:57:05 2021 +0800
+
+    添加内建插件sendemail的说明
+
+[33mcommit 4e25d9cc0410315c696a06887bcdc0aa0ac0b68f[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue May 25 15:50:33 2021 +0800
+
+    添加内建插件分类
+
+[33mcommit 3874f8b404080b298b7cb27bd1814f1ef0f8c672[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue May 25 14:50:54 2021 +0800
+
+    添加轻应用说明
+
+[33mcommit e18ef2c896394e3dbd76464747c2623bf90fa175[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 24 20:21:35 2021 +0800
+
+    添加我的镜像说明
+
+[33mcommit ac81f633202356c1e813ae983e29bd9c2cc542e7[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 24 19:31:33 2021 +0800
+
+    添加客户端内置命令
+
+[33mcommit 3f22796166eefba374eaf9d665ef8a1d60d8a3b1[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 24 14:48:05 2021 +0800
+
+    添加邮件出口配置
+
+[33mcommit de27213939a7e94ca715a894dfd8b65b20e53823[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 24 14:45:39 2021 +0800
+
+    添加构建邮件模版配置说明
+
+[33mcommit 84163d4933dc83a93380f74d4273c78f8e8074c9[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon May 24 14:33:09 2021 +0800
+
+    添加聚云连接器
+
+[33mcommit d7f9163e837765a1b36eb9c92cd37c13cf1f04f5[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed May 19 20:27:08 2021 +0800
+
+    添加juyun连接器描述
+
+[33mcommit 67b2a85ebf6a83c854de5ee05ed053361ac34adf[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed May 19 15:34:40 2021 +0800
+
+    修改v2.0.0 -> v.2.1.0 升级的数据库操作说明
+
+[33mcommit 7c29717ff4745fa5eac8492bb863cb0c48c9463d[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed May 19 10:39:28 2021 +0800
+
+    修改 版本升级
+
+[33mcommit 7c52201ac79e2ff5e08cef46ce1974e0d523db87[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed May 19 10:30:35 2021 +0800
+
+    修改 流水线三种代码来源
+
+[33mcommit abef17700e8277e3bb9acd5e185eb199f331cd79[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed May 12 11:47:25 2021 +0800
+
+    修改测试转线上的文档
+
+[33mcommit 0b13bbf0f3b8f6a9ac8a2bfeafa149c9c62c1a66[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed May 12 11:39:40 2021 +0800
+
+    添加测试转生产的文档
+
+[33mcommit f67d9bce61807eae51dce915c7c1b353fee75494[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sun May 9 19:54:53 2021 +0800
+
+    添加版本升级文档
+
+[33mcommit 6f9f7bc168db47ef6de7531f98f54ea649beb498[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Apr 30 22:53:01 2021 +0800
+
+    添加机器构建私钥的说明
+
+[33mcommit 9d86eec1d20f4a4c83d151428a209e4a2526d91d[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Apr 29 23:54:37 2021 +0800
+
+    添加轻应用的审计
+
+[33mcommit d6af3ea12b17d100ba46360e8a2165c7830f1982[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Apr 29 23:54:00 2021 +0800
+
+    mysql时区调整
+
+[33mcommit 87b1b4ef5e70ca563b04f6ce9ffbe0a9fc086796[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Apr 29 22:54:02 2021 +0800
+
+    流水线中的“票据”改成“代码仓库票据”
+
+[33mcommit 6b7919e0955d44149f05499136db11434ecdf19b[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Apr 23 15:42:12 2021 +0800
+
+    添加聚云样式说明
+
+[33mcommit 72c26d8ceda536f19f1a1f58f26488c3db9d5d0f[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Apr 22 10:43:40 2021 +0800
+
+    删除线上机器文件添加审计说明
+
+[33mcommit af96f3573cf9a0820ea351ed81ee96f954f9bddb[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Apr 21 16:29:18 2021 +0800
+
+    修改kubestar.v2说明，添加提示
+
+[33mcommit e76080eb585186418e5fc4e460e63f7af269e379[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Apr 19 10:38:17 2021 +0800
+
+    添加kubestarctl.v2的说明
+
+[33mcommit ba865c12f662f860108842022b43b0aee6c68b6c[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Apr 16 11:56:51 2021 +0800
+
+    添加文件发送维护说明
+
+[33mcommit a22ed5b2002cceb6a452ac4da1d7ac7997c68571[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Fri Apr 16 11:45:00 2021 +0800
+
+    添加文件发送说明
+
+[33mcommit c5fbe5f295f748cbf851bfb44301e660e2f4b81a[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Apr 15 20:09:36 2021 +0800
+
+    修复awsecs跳转链接不正确
+
+[33mcommit 20d8ecff23fdf43868d3d6259794f9a3aef35cb4[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Apr 15 19:32:21 2021 +0800
+
+    添加awsecs插件说明
+
+[33mcommit e2d0feabf306064b15392c69def28db7b7e59873[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Apr 14 16:51:05 2021 +0800
+
+    添加aws cli安装说明
+
+[33mcommit e7b809fc67af92ed7f47606a3995d85632470a35[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Apr 14 16:47:27 2021 +0800
+
+    添加awsecr_push_image.pl说明
+
+[33mcommit 163315229cdd0cec79c2ae11f95995b5b1010c61[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Apr 13 10:26:03 2021 +0800
+
+    添加流水线三种代码来源的说明
+
+[33mcommit 7ce2c8ca45ce58db3c994480351d93516aa248b2[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Apr 12 20:31:13 2021 +0800
+
+    添加服务相关的FAQ
+
+[33mcommit 988d2d8624221883c52b290a133869afba4f3724[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Apr 12 19:55:50 2021 +0800
+
+    添加FAQ
+
+[33mcommit da96f01e3ad552c4472f85286c4ae9279026b873[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Apr 12 19:41:07 2021 +0800
+
+    修改集群安装中域名可以通过C3_DOMAIN进行控制
+
+[33mcommit 40cd8f94b3ba3d56f2be99ccb855af420f673c01[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Apr 12 19:14:16 2021 +0800
+
+    提交安装和开发页
+
+[33mcommit d7349368da0e0f4aeff7418136fecf5cee844d7e[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Apr 12 19:08:26 2021 +0800
+
+    添加维护页
+
+[33mcommit 20279ac9868ef257df6a32282f03678ca8d40bdf[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Apr 12 19:07:03 2021 +0800
+
+    添加服务相关的FAQ
+
+[33mcommit 48f176169494ee41f0198ac50aecb3d5358db9ac[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Apr 10 18:09:44 2021 +0800
+
+    添加连接器ssologoutaddr和ssologoutapi的说明
+
+[33mcommit 312487f6a4c4328ae05c9d211c4ca7ada3018c71[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Apr 10 18:05:56 2021 +0800
+
+    连接器添加上对接二级跳转的连接器的说明
+
+[33mcommit bb8c3cad7c829438fe3818714f5918dd925fa1c0[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Apr 8 15:43:21 2021 +0800
+
+    添加审计日志说明
+
+[33mcommit 22ec8be67327f1d933dd29cf207a40c0f543b605[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Apr 7 10:30:43 2021 +0800
+
+    监控说明中添加自监控部分
+
+[33mcommit fd4331e4c29fbc49ccc5db8f13eed3b64c0620ae[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Apr 6 20:27:17 2021 +0800
+
+    优化构建触发脚本，添加详细说明
+
+[33mcommit ba6d7b47d9c2c4cb5520e8613486ee72c6874158[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Apr 6 20:17:00 2021 +0800
+
+    单机版安装后建议升级
+
+[33mcommit ad6915a306316ba4917220cb325d72b0bedd47dc[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Apr 6 20:02:27 2021 +0800
+
+    添加前端开发环境准备说明
+
+[33mcommit 085f9dbf5bcfdf1032b8ca7e302dc77e274872b0[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Apr 6 19:37:12 2021 +0800
+
+    添加系统监控说明
+
+[33mcommit db49419e730a2264ca08cc3aeec02a45808f5fc2[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Apr 1 11:40:09 2021 +0800
+
+    添加维护升级说明
+
+[33mcommit 01a115d06a99f128380d33171d37bac0647597af[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Mar 31 21:03:57 2021 +0800
+
+    添加票据说明
+
+[33mcommit 305b7ef4a4a420bd25be7d5a41349c9442e82bdd[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Mar 31 19:48:17 2021 +0800
+
+     terraform添加上票据说明
+
+[33mcommit e3fa34a0bd4e17a4405adcf3bb279ed791cd80dc[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Mar 31 19:42:56 2021 +0800
+
+     terraform添加上票据说明
+
+[33mcommit 3c5f0e6253bcab60aec83a4c1e661cd1337949a4[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Mar 31 11:00:33 2021 +0800
+
+    内建依赖的二进制添加维护说明
+
+[33mcommit 7854e3f7f46da8d76b491dcec6c35bfe59f2821f[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Mar 30 23:57:57 2021 +0800
+
+    添加terraform说明
+
+[33mcommit ffddf3288811354e1d706ee31cafdcd0f10612b5[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Mar 30 22:45:27 2021 +0800
+
+    添加kubectl说明
+
+[33mcommit 4162f0cdbb3ad957c0c3ab490e8bc4dc82cd2d3e[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Mar 30 20:10:27 2021 +0800
+
+    添加kubestar说明
+
+[33mcommit 4a2b6f22dfc9859fb4df061dfb2e138c8e2e7c49[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Mar 30 19:14:58 2021 +0800
+
+    添加一键部署k8s说明
+
+[33mcommit f5a3a248dbaa2f2fca58a076cd467534db795daa[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Mar 30 14:09:46 2021 +0800
+
+    修复：查看变量中图片引用错误
+
+[33mcommit 7c4d378eb5dfb337213b6b38ab27a8f24a540851[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Mar 30 14:08:09 2021 +0800
+
+    添加查看变量说明
+
+[33mcommit 014c4f550153a02b3c2e06e709446aa1c4665312[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Mar 29 22:58:29 2021 +0800
+
+    添加报警通知页面
+
+[33mcommit 6cd828f826e999d96790dd405afe082647009dc8[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Mar 29 22:43:11 2021 +0800
+
+    添加机器管理页面
+
+[33mcommit 7ae0dcf39594bda12505c8089fd192a529fe6199[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Mar 29 22:35:50 2021 +0800
+
+    添加机器分组说明
+
+[33mcommit 21ef8875bef303fe10db8f8079065ae2ab3f78d4[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Mar 29 22:22:21 2021 +0800
+
+    添加脚本管理说明
+
+[33mcommit 9532b0a1321270b6d162dec9d793f83989187040[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Mar 29 22:15:54 2021 +0800
+
+    添加文件管理说明
+
+[33mcommit b14cf4e592bc82bb9b7b115c3eb70b3c67d4a853[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Mar 29 22:06:03 2021 +0800
+
+    添加账户管理说明
+
+[33mcommit c993ac477479fa132eaa9833204721077ee79f58[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Mar 29 21:57:22 2021 +0800
+
+    添加流水线说明
+
+[33mcommit 1345d402a80737c65896270d71f945cf5f3de162[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Mar 29 21:56:21 2021 +0800
+
+    添加构建触发脚本说明
+
+[33mcommit 4e8a7ff76e52edd55136c7e4259aec80c3850d2e[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Mar 29 18:57:55 2021 +0800
+
+    清理，SUMMARY多了一个定时任务
+
+[33mcommit 7f4d1a2cc53398b38bdcf29679cb9337eb42fd81[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Mar 29 18:18:32 2021 +0800
+
+    添加连接器对接的文档
+
+[33mcommit 7f04d67cb4decf8e92f80a3e1f3cb0a6feeef115[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Mar 29 15:33:14 2021 +0800
+
+    修改集群安装的说明,添加数据库部分和域名部分的说明
+
+[33mcommit b62d2c4339aea75f17700b0a3dd98969e973fd8a[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Feb 25 15:25:33 2021 +0800
+
+    添加“机器分批“描述页
+
+[33mcommit 55b526490e8c3db8a8fe19ea65687dc78678f2cf[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Thu Feb 25 14:58:58 2021 +0800
+
+    添加流水线
+
+[33mcommit 466b716282ed6fb4d642647998407b7f29c358af[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Feb 3 20:47:51 2021 +0800
+
+    添加“使用手册“描述页
+
+[33mcommit d3fbc8b75f8e01c555255a3fa399ba9c04e25392[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Feb 3 18:01:57 2021 +0800
+
+    添加“分组作业”的使用手册
+
+[33mcommit 9746d9ba505909775385c535958bc7f749736d66[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Wed Feb 3 17:29:07 2021 +0800
+
+    添加“定时作业”的使用手册
+
+[33mcommit beee2d56ccfafc0ea225f6b18001a845587381a6[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Feb 2 19:37:29 2021 +0800
+
+    添加“作业管理”的使用手册
+
+[33mcommit 84bae74bac06e3dc7b84c9b08fa7736feb9b5e9e[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Feb 2 19:10:44 2021 +0800
+
+    添加“发起审批”的使用手册
+
+[33mcommit f4d00dad672ae1e73b1630068cb44bffe58dcd22[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Feb 2 17:00:06 2021 +0800
+
+    添加“虚拟终端”的使用手册
+
+[33mcommit f818c3721219a75100dd50782954fd1fad44f7d6[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Feb 2 16:38:42 2021 +0800
+
+    添加“快速分发文件”的使用手册
+
+[33mcommit b8ad9f3207b1bca0012f717996bb3e76d4ac0164[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Feb 2 15:57:12 2021 +0800
+
+    添加“快速执行脚本”的使用手册
+
+[33mcommit cc25d47bfa5d683333c0697fa3e1966a11612ed3[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Tue Feb 2 15:06:44 2021 +0800
+
+    添加“AGENT安装和管理”的使用手册
+
+[33mcommit 5185cdd41b4bd622c6d6090f0647e5820adda20d[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Feb 1 18:52:10 2021 +0800
+
+    添加集群版安装教程
+
+[33mcommit f4265c884011b5dcda594dfaa6df58b27c530ad0[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Feb 1 18:50:13 2021 +0800
+
+    添加单机版安装教程
+
+[33mcommit 4e29e6f442c3b4145c67e1d2d84dd0f9cb252e2a[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Feb 1 18:47:35 2021 +0800
+
+    OPEN-C3介绍
+
+[33mcommit 8a765d6392a928c2b77ec31483d8c06031444888[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Mon Feb 1 18:41:39 2021 +0800
+
+    删除Home跳转
+
+[33mcommit c21fe7a2194cc1eb3d6092452db5afd6ba8be51d[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Dec 5 09:12:37 2020 +0800
+
+    添加deploy.sh脚本
+
+[33mcommit 2e117abfbe0532fbd46a6d704cc784c0467536ad[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Dec 5 09:08:51 2020 +0800
+
+    添加简介
+
+[33mcommit e7c1dbd6eff768903c681363f98ee38c81ac5588[m
+Author: lijinfeng2011 <lijinfeng2011@gmail.com>
+Date:   Sat Dec 5 08:33:42 2020 +0800
+
+    Initial commit
