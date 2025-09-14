@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="lijinfeng2011@gmail.com">
+        <link rel="canonical" href="https://www.open-c3.online/user-guide/%E7%AE%80%E4%BB%8B/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>1 简介 - Open-C3</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Open-C3</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">首页</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../getting-started/" class="nav-link">快速开始</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../" class="nav-link">用户指南</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../dev-guide/" class="nav-link">开发指南</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../%E6%BC%94%E7%A4%BA%E7%8E%AF%E5%A2%83/" class="nav-link">演示环境</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../video-tutorials/" class="nav-link">视频教程</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">关于</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../about/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/" class="dropdown-item">联系我们</a>
+</li>
+                                    
+<li>
+    <a href="../../about/%E6%AC%A2%E8%BF%8E%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE/" class="dropdown-item">欢迎参与贡献</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/open-c3/docs/blob/main/docs/user-guide/简介.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#1" class="nav-link">1 简介</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#11" class="nav-link">1.1 名字的由来</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#12" class="nav-link">1.2 适合的读者</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#13" class="nav-link">1.3 阅读方式</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#14" class="nav-link">1.4 功能概览</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#15" class="nav-link">1.5 开源说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="1">1 简介</h1>
+<p>在整个的运维环节中，对产品的持续构建（CI）持续部署（CD）伴随着产品的整个生命周期。 一个运行良好的运维系统可以辅助提升运营效率，达到持续运营（CO）的效果。OPEN-C3为解决CI/CD/CO而生。</p>
+<h2 id="11">1.1 名字的由来</h2>
+<p>对于运维来说，CI/CD很容易理解，就是持续的构建，持续的发布。但是对于Open-C3来说，我们想做的更多，运维不仅是要持续的构建持续的发布应用。还需要监控业务的状态，在业务异常时候作出相应的调整。或者根据业务的需求进行业务部署的调整。系统运维的工具平台能为业务运营提供工具和平台的支持。举个游戏行业的例子，比如对于游戏的运营，运营团队根据在线人数等数据，可能会做出决策，需要开一个新的区域。 这时就可以通过平台里面编排的流程进行一键的创建。这就是运维工具为运营提供了支持。所以我们CO的概念。</p>
+<p>CI/CD/CO 我们称之为C3， 同时3有“多”的意思。我们希望可以持续的做一些事情。包括C3这个项目本身，希望可以持续的做下去。</p>
+<h2 id="12">1.2 适合的读者</h2>
+<p>本文主要是对运维和运维开发的人员讲解Open-C3的功能和使用方式。如果你正考虑在一个新的企业环境中构建一个自动化运维平台，如果你正考虑使用Open-C3，那么这个指南正合适指导你一步一步的进行安装和使用。</p>
+<h2 id="13">1.3 阅读方式</h2>
+<p>Open-C3中的功能太过复杂，我们在github中存放了使用手册，但是不熟悉Open-C3的初始用户，可能感觉无从下手。该指南最为主要的功能，就是告诉用户，在一个新企业中，怎么一步一步的把Open-C3安装、配置、使用起来。在能讲明白这个的事情之上，才会做一些更深入的探讨。</p>
+<p>除了第一章，后面的章节都是按照顺序进行的，最好按照顺序阅读和实施，这样更容易理解。</p>
+<h2 id="14">1.4 功能概览</h2>
+<p>Open-C3提供了一个完整的自动化运维平台，下面具体讲解每个模块的主要功能和职责。</p>
+<p><img alt="" src="/attachments/20250706213949_wps2.jpg" /> </p>
+<h3 id="141-cmdb">1.4.1 CMDB</h3>
+<p>I ) CMDB主要功能：</p>
+<p>1）提供一个完整的记录企业资源/资产的数据库</p>
+<ul>
+<li>
+<p>支持的公有云但不限于：AWS、腾讯云、华为云、阿里云、谷歌云、金山云。</p>
+</li>
+<li>
+<p>私有云: OpenStack</p>
+</li>
+<li>
+<p>IDC资源： 主机、数据库</p>
+</li>
+</ul>
+<p>2）提供搜索功能</p>
+<ul>
+<li>
+<p>模糊全局搜索，比如搜索一个IP</p>
+</li>
+<li>
+<p>根据不同的过滤条件过滤资源</p>
+</li>
+</ul>
+<p>3）提供时间机器功能，可以选择回看历史记录</p>
+<p>4）提供资源的一些常规操作：</p>
+<ul>
+<li>
+<p>给资源打标签（tags）</p>
+</li>
+<li>
+<p>给资源添加备注</p>
+</li>
+<li>
+<p>查看资源监控信息【跳转到监控系统页面打开对应资源的监控】</p>
+</li>
+<li>
+<p>查看资源详情</p>
+</li>
+</ul>
+<p>5）提供服务树分组功能</p>
+<ul>
+<li>服务树是Open-C3中是一个很重要的概念，资源、监控策略、发布流水线、权限等都是跟服务树进行关联。</li>
+</ul>
+<p>6）给其它子系统提供数据</p>
+<ul>
+<li>给监控系统和发布系统提供资源分组</li>
+</ul>
+<p>II) 次要功能：</p>
+<p>1）提供服务分析能力</p>
+<ul>
+<li>CMDB中包含中包含了企业基础所有的资源列表和详情。可以跟进这个内容生成调用关系。</li>
+</ul>
+<p>2）为第三方系统提供接口</p>
+<ul>
+<li>给堡垒机提供资源列表</li>
+</ul>
+<p>1.4.1.3 界面截图：</p>
+<p><img alt="" src="/attachments/20250706213949_wps3.jpg" /> 
+（CMDB资源概览）</p>
+<p><img alt="" src="/attachments/20250706213949_wps4.jpg" /> 
+（CMDB服务分析图）</p>
+<h3 id="142">1.4.2 监控系统</h3>
+<p>I ) 主要功能：</p>
+<p>1）支持监控常规资源：主机、Mysql、Redis、MongoDB</p>
+<ul>
+<li>除了常规指标，还支持自定义进程、端口等监控</li>
+</ul>
+<p>2）支持云监控：阿里云、华为云、AWS、谷歌云、腾讯云 等。</p>
+<p>3）支持kubernetes监控</p>
+<p>4）支持根据服务树纬度查看资源看板</p>
+<p>5）提供告警处理功能</p>
+<ul>
+<li>
+<p>提供页面显示当前告警列表</p>
+</li>
+<li>
+<p>告警认领、告警屏蔽、告警升级功能</p>
+</li>
+</ul>
+<p>II ) 次要功能：</p>
+<p>1）支持其他类型监控，如： ssl证书过期、域名监控</p>
+<p>III ) 界面截图：</p>
+<p><img alt="" src="/attachments/20250706213949_wps5.jpg" /> 
+（主机监控图）</p>
+<p><img alt="" src="/attachments/20250706213949_wps6.jpg" /> 
+（数据库监控图）</p>
+<p><img alt="" src="/attachments/20250706213949_wps7.jpg" /> 
+（kubernetes集群监控图）</p>
+<p><img alt="" src="/attachments/20250706213949_wps8.jpg" /> 
+（当前告警页面）</p>
+<p><img alt="" src="/attachments/20250706213949_wps9.jpg" width="50%" />
+（告警消息）</p>
+<h3 id="143">1.4.3 发布系统</h3>
+<p>I ) 主要功能：</p>
+<p>1）支持发布流水线，支持传统主机发布、支持Kubernetes应用发布</p>
+<ul>
+<li>
+<p>支持主机分批发布</p>
+</li>
+<li>
+<p>支持一键回滚</p>
+</li>
+</ul>
+<p>2）发布过程有支持审批步骤</p>
+<p>II ) 界面截图：</p>
+<p><img alt="" src="/attachments/20250706213949_wps10.jpg" /> 
+（某个服务树的流水线列表）</p>
+<p><img alt="" src="/attachments/20250706213949_wps11.jpg" /> 
+（单个流水线）</p>
+<h3 id="144">1.4.4 故障自愈</h3>
+<p>I ) 主要功能：</p>
+<p>1）支持监控告警和作业进行关联，起到告警触发修复作业的作用。</p>
+<p>II ) 界面截图：</p>
+<p><img alt="" src="/attachments/20250706213949_wps12.jpg" /> 
+（故障自愈触发列表页）</p>
+<h3 id="145">1.4.5 工单</h3>
+<p>I ) 主要功能：</p>
+<p>1）支持工单的生命周期管理：工单创建、分配、处理、关闭。</p>
+<p>2）支持消息通知。</p>
+<p>II ) 界面截图：</p>
+<p><img alt="" src="/attachments/20250706213949_wps13.jpg" /> 
+（工单首页）</p>
+<p><img alt="" src="/attachments/20250706213949_wps14.jpg" /> 
+（工单提交页面）</p>
+<h3 id="146-bpm">1.4.6 BPM流程</h3>
+<p>I ) 主要功能：</p>
+<p>1）自动化流程支持创建云资源或者修改云资源配置： </p>
+<ul>
+<li>
+<p>腾讯云： CVM、CLB、Mysql 等</p>
+</li>
+<li>
+<p>AWS： EC2、SQS 等</p>
+</li>
+<li>
+<p>谷歌云：VM、LB 等</p>
+</li>
+</ul>
+<p>2）流程过程支持审批</p>
+<p>3）流程系统支持对接工单</p>
+<p>II ) 界面截图：</p>
+<p><img alt="" src="/attachments/20250706213949_wps15.jpg" /> 
+（流程提交页面）</p>
+<h3 id="147">1.4.7 成本优化</h3>
+<p>I ) 主要功能：</p>
+<p>1）自动识别低利用率资源 </p>
+<ul>
+<li>
+<p>主机： 主机利用率、磁盘利用率</p>
+</li>
+<li>
+<p>AWS： RDS、Redis、ALB、ELB、NLB, AWS磁盘卷</p>
+</li>
+<li>
+<p>腾讯云: CLB、Redis</p>
+</li>
+<li>
+<p>华为云：RDS、Redis</p>
+</li>
+</ul>
+<p>2）添加费用计算功能，计算服务树费用、资源费用</p>
+<ul>
+<li>支持： 华为云、AWS</li>
+</ul>
+<p>II ) 界面截图：</p>
+<p><img alt="" src="/attachments/20250706213949_wps16.jpg" /> 
+（低利用率资源查看页面）</p>
+<h2 id="15">1.5 开源说明</h2>
+<p>Open-C3使用GNU许可(GNU General Public License,简称GPL)，可以自由使用。允许任何人自由运行、研究、分享和修改。</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+  <footer style="text-align: center; font-size: 0.9em; color: #FFF; padding: 1em;background-color: #3eaae9;">
+    OPEN-C3 © 2025
+  </footer>
+
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
