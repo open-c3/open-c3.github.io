@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="lijinfeng2011@gmail.com">
+        <link rel="canonical" href="https://www.open-c3.online/user-guide/%E5%8F%91%E8%B5%B7%E5%AE%A1%E6%89%B9/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>1 发起审批 - Open-C3</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Open-C3</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">首页</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../getting-started/" class="nav-link">快速开始</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../" class="nav-link">用户指南</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../dev-guide/" class="nav-link">开发指南</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../%E6%BC%94%E7%A4%BA%E7%8E%AF%E5%A2%83/" class="nav-link">演示环境</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../video-tutorials/" class="nav-link">视频教程</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">关于</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../about/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/" class="dropdown-item">联系我们</a>
+</li>
+                                    
+<li>
+    <a href="../../about/%E6%AC%A2%E8%BF%8E%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE/" class="dropdown-item">欢迎参与贡献</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/open-c3/docs/blob/main/docs/user-guide/发起审批.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#1" class="nav-link">1 发起审批</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#11" class="nav-link">1.1 试试吧</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="1">1 发起审批</h1>
+<p>正常情况下不会单独使用“发起审批”，一般在作业任务和流水线中使用。</p>
+<p>发起审批起到一个审批的作用，执行后审批人会收到消息，审批结束后任务继续往下执行。</p>
+<p>页面路径： 【快速执行】-&gt;【发起审批】</p>
+<h3 id="_1">页面介绍</h3>
+<p><img alt="" src="/attachments/20250706235922_wps115.jpg" /></p>
+<h3 id="_2">作业名称</h3>
+<p>默认生成，也可以进行修改，在执行历史中可以通过名称查找。</p>
+<h3 id="_3">审批内容(可使用变量)</h3>
+<p>审批人会查看到对应内容</p>
+<pre><code>审批内容可以使用变量，引入形式为：${变量名}
+内部变量：
+version            版本号。
+_rollbackVersion_  回滚版本，发布线上时，如果选择了回滚版本，可以使用此变量。
+ip                 发布目标机器ip。
+_jobtype_          发布类型，值为test或online。
+jobname            作业名。
+flowname           流水线名称。
+treename           服务树节点全称。
+taginfo            版本改动详情：commit hash,commit message,committer列表。
+【注: 以下变量&gt;= v2.3.4 版本可用】
+submitter          提交人
+deploy_env         内容同_jobtype_
+rollback_version   内容同_rollbackVersion_
+rollback           如有回滚版本的情况下内容为“如需回滚会回滚到版本: xxx” 否则为空
+tagtime            OPENC3发现tag的时间
+tagger             打tag的人
+</code></pre>
+<p>例: 审批内容可以写成如下:</p>
+<pre><code>发布审批
+提交人: ${submitter};
+作业名: ${jobname};
+流水线名: ${flowname};
+发布版本信息: ${taginfo};
+服务树名: ${treename};
+版本: ${version};
+回滚版本: ${_rollbackVersion_};
+</code></pre>
+<p>例2:【&gt;=v2.3.4版本推荐使用以下模版】</p>
+<pre><code>发布审批
+提交人：${submitter};
+
+流水线名: ${flowname};
+服务树名称: ${treename};
+
+发布版本: ${version};
+${rollback}
+
+发布环境: ${deploy_env}
+
+发布版本tag信息: ${taginfo}
+</code></pre>
+<h3 id="_4">审批人</h3>
+<p>多个审批人用“,”（英文逗号）分隔。</p>
+<h3 id="_5">生效环境</h3>
+<p>流水线的发布区分“测试环境”和“线上环境”，这个配置控制该审批是在“测试环境”中生效还是“线上环境”中生效，还是同时生效。</p>
+<p>如：</p>
+<p>可以配置一个审批动作，选择“线上环境”生效，因为“线上环境”和“测试环境”用的是同一个作业的配置，</p>
+<p>那么就可以做到发布过程中“测试环境”不用审批，“线上环境”需要审批。</p>
+<h3 id="_6">生效动作</h3>
+<p>在流水线中的发布可以实时回滚，审批动作是一起进行配置的，这个开关可以控制该步骤的审批是“发布”时用还是“回滚”时用，还是不管发布和回滚都要执行。</p>
+<h3 id="_7">分批</h3>
+<p>在流水线中使用该审批插件时，因为流水线中的发布存在灰度发布的过程。要发布的服务会进行分批。</p>
+<p>该控制按钮用于控制是否是否每个批次都要运行该插件。</p>
+<ul>
+<li>
+<p>总是执行： 每一个分批的操作都会运行该审批动作。</p>
+</li>
+<li>
+<p>仅第一个分组: 在一个分组作业中，只有第一个分批会调用该审批动作，后面的批次跳过审批。</p>
+</li>
+<li>
+<p>仅最后一个分组: 在一个分组作业中，只有最后一个分批会调用该审批动作，之前的批次跳过审批。</p>
+</li>
+</ul>
+<h3 id="_8">所有审批人都要审批</h3>
+<p>当审批人是多人时，选择的效果：</p>
+<ul>
+<li>
+<p>是： 多个审批人都需要进行审批，如果有一个选择了不通过，则视为审批不通过。</p>
+</li>
+<li>
+<p>只看第一个处理审批的人的结果。有人审批后，之后的审批无效。</p>
+</li>
+</ul>
+<h2 id="11">1.1 试试吧</h2>
+<p>执行</p>
+<p><img alt="" src="/attachments/20250706235922_wps116.jpg" /></p>
+<p>控制台审批</p>
+<p><img alt="" src="/attachments/20250706235922_wps117.jpg" /></p>
+<p>移动端审批</p>
+<p>通过飞书软件查看审批列表：</p>
+<p><img alt="" src="/attachments/20250706235922_wps118.png" width="40%" /></p>
+<p>点击进入处理审批：</p>
+<p><img alt="" src="/attachments/20250706235922_wps119.png" width="40%" /></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+  <footer style="text-align: center; font-size: 0.9em; color: #FFF; padding: 1em;background-color: #3eaae9;">
+    OPEN-C3 © 2025
+  </footer>
+
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

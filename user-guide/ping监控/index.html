@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="lijinfeng2011@gmail.com">
+        <link rel="canonical" href="https://www.open-c3.online/user-guide/ping%E7%9B%91%E6%8E%A7/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>1 ping监控 - Open-C3</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Open-C3</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">首页</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../getting-started/" class="nav-link">快速开始</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../" class="nav-link">用户指南</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../dev-guide/" class="nav-link">开发指南</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../%E6%BC%94%E7%A4%BA%E7%8E%AF%E5%A2%83/" class="nav-link">演示环境</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../video-tutorials/" class="nav-link">视频教程</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">关于</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../about/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/" class="dropdown-item">联系我们</a>
+</li>
+                                    
+<li>
+    <a href="../../about/%E6%AC%A2%E8%BF%8E%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE/" class="dropdown-item">欢迎参与贡献</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/open-c3/docs/blob/main/docs/user-guide/ping监控.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#1-ping" class="nav-link">1 ping监控</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#11" class="nav-link">1.1 配置</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#12" class="nav-link">1.2 导入看板</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#13" class="nav-link">1.3 总结</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="1-ping">1 ping监控</h1>
+<p>在企业环境中，我们需要监控监控网络的延迟和丢包情况。</p>
+<h2 id="11">1.1 配置</h2>
+<hr />
+<h3 id="_1">配置/源</h3>
+<p><strong>配</strong><strong>置</strong></p>
+<p>源是发起ping的主机节点。</p>
+<p>在 src 目录下，存放源主机分组，每个文件是一个分组，文件每行是个ip或者域名</p>
+<p>例子:</p>
+<pre><code>[root@open-c3]# ls src
+cloud-aws-afs
+cloud-huawei-open-c3
+[root@open-c3]# cat src/cloud-huawei-open-c3
+openc3-fping
+[root@open-c3]# cat src/cloud-aws-afs
+10.10.10.111
+10.10.10.112
+</code></pre>
+<p>在源机器上启动容器</p>
+<pre><code>docker run -d --restart=always -p 9605:9605 --name openc3-fping joaorua/fping-exporter fping-exporter --fping=/usr/sbin/fping -c 10
+</code></pre>
+<p>ACL</p>
+<p>开放访问权限，让Open-C3机器访问源机器的9605端口</p>
+<hr />
+<h3 id="_2">配置/目标</h3>
+<p>目标</p>
+<p>目标是要ping的对象，放在dst目录下，每个文件是一个分组。格式和源一样</p>
+<p>配置/采集</p>
+<p>配置采集</p>
+<pre><code>conf.yml配置着需要采集的任务，是个yaml格式
+key是src中源的名称
+valus 是个数组，数组中的元素是目标的名称，或者一个正则表达式匹配目标中的名称。
+      特殊情况，当value是 '*' 时表示所有目标组
+
+例子:
+# cat conf.yml
+cloud-huawei-open-c3:       [ '/country/', '/website/', '/cloud/', '/workplace/' ]
+cloud-ucloud-ng:            [ '/country/', '/website/' ]
+cloud-huawei-afs:           [ '/cloud/' ]
+cloud-aws-afs:              [ '/country/' ]
+cloud-aliyun-frankfurt:     '*'
+</code></pre>
+<p>配置/生成普罗米修斯配置</p>
+<p>生成普罗米修斯配置文件</p>
+<p>到容器中该目录下执行 ./make.sh 命令</p>
+<h2 id="12">1.2 导入看板</h2>
+<p>打开下面目录，导入对应看板：</p>
+<p><a href="https://github.com/open-c3/open-c3-guide/tree/main/attachments/monitor/grafana/fping">https://github.com/open-c3/open-c3-guide/tree/main/attachments/monitor/grafana/fping</a></p>
+<p>注：国内地址：</p>
+<p><a href="https://gitee.com/open-c3/open-c3-guide/tree/main/attachments/monitor/grafana/fping">https://gitee.com/open-c3/open-c3-guide/tree/main/attachments/monitor/grafana/fping</a></p>
+<p><img alt="" src="/attachments/20250706223400_wps51.jpg" /> 
+Ping监控在分组起名的时候，用“-”号分隔。 第一个段为分组。</p>
+<h2 id="13">1.3 总结</h2>
+<p>该ping监控可以监控到全局的网络延迟和丢包情况。但是有个弊端，如果Open-C3到源机器丢包严重，可能会采集不到数据。如果有这个担忧可以在源机器上安装kuma程序进行补充监控。</p>
+<pre><code class="language-sh">docker run -d --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+  <footer style="text-align: center; font-size: 0.9em; color: #FFF; padding: 1em;background-color: #3eaae9;">
+    OPEN-C3 © 2025
+  </footer>
+
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

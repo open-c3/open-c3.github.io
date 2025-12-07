@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="lijinfeng2011@gmail.com">
+        <link rel="canonical" href="https://www.open-c3.online/user-guide/CND%E5%88%B7%E6%96%B0/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>1 CND刷新 - Open-C3</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Open-C3</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">首页</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../getting-started/" class="nav-link">快速开始</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../" class="nav-link">用户指南</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../dev-guide/" class="nav-link">开发指南</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../%E6%BC%94%E7%A4%BA%E7%8E%AF%E5%A2%83/" class="nav-link">演示环境</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../video-tutorials/" class="nav-link">视频教程</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">关于</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../about/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/" class="dropdown-item">联系我们</a>
+</li>
+                                    
+<li>
+    <a href="../../about/%E6%AC%A2%E8%BF%8E%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE/" class="dropdown-item">欢迎参与贡献</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/open-c3/docs/blob/main/docs/user-guide/CND刷新.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#1-cnd" class="nav-link">1 CND刷新</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#11" class="nav-link">1.1 使用</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="1-cnd">1 CND刷新</h1>
+<p>OPEN-C3支持通过内建插件对各CDN厂商的CDN进行刷新。</p>
+<p>支持的CDN厂商：</p>
+<ul>
+<li>
+<p>aliyun: 阿里云</p>
+</li>
+<li>
+<p>aws: AWS</p>
+</li>
+<li>
+<p>chinacache: 蓝汛</p>
+</li>
+<li>
+<p>dnion: 帝联</p>
+</li>
+<li>
+<p>exclouds: 逸云</p>
+</li>
+<li>
+<p>huawei: 华为</p>
+</li>
+<li>
+<p>isurecloud: 云端智度</p>
+</li>
+<li>
+<p>jscdn: 金山云</p>
+</li>
+<li>
+<p>qcloud: 腾讯</p>
+</li>
+<li>
+<p>qingcdn: 白山云</p>
+</li>
+<li>
+<p>qiniu: 七牛</p>
+</li>
+<li>
+<p>ucloud: ucloud</p>
+</li>
+</ul>
+<h2 id="11">1.1 使用</h2>
+<p>学习OPEN-C3内建插件cdnrefresh的用法。cdnrefresh插件用于刷新CDN。</p>
+<h3 id="111">1.1.1 票据</h3>
+<p>CDN刷新需要使用账号信息，这部分信息通过票据进行管理。</p>
+<p>新建票据，票据类型选择“插件”，票据的内容格式如下的kv键值。</p>
+<pre><code>export openc3_cdnrefresh_cdn_abc=&quot;123&quot;
+</code></pre>
+<h3 id="_1">厂商对应需要的票据键值</h3>
+<ul>
+<li>aliyun【阿里云】</li>
+</ul>
+<pre><code>openc3_cdnrefresh_aliyun_accessKey
+openc3_cdnrefresh_aliyun_accessSecret
+openc3_cdnrefresh_aliyun_regionId
+</code></pre>
+<ul>
+<li>aws【AWS】</li>
+</ul>
+<pre><code>无
+</code></pre>
+<ul>
+<li>chinacache【蓝汛】</li>
+</ul>
+<pre><code>openc3_cdnrefresh_chinacache_username
+openc3_cdnrefresh_chinacache_password
+</code></pre>
+<ul>
+<li>dnion【帝联】</li>
+</ul>
+<pre><code>openc3_cdnrefresh_dnion_username
+openc3_cdnrefresh_dnion_password
+</code></pre>
+<ul>
+<li>exclouds【逸云】</li>
+</ul>
+<pre><code>openc3_cdnrefresh_exclouds_Authorization
+</code></pre>
+<ul>
+<li>excloudsPrefetch【逸云】预热</li>
+</ul>
+<pre><code>openc3_cdnrefresh_exclouds_Authorization
+</code></pre>
+<ul>
+<li>huawei【华为】</li>
+</ul>
+<pre><code>openc3_cdnrefresh_huawei_ak
+openc3_cdnrefresh_huawei_sk
+</code></pre>
+<ul>
+<li>isurecloud【云端智度】</li>
+</ul>
+<pre><code>openc3_cdnrefresh_isurecloud_appid
+openc3_cdnrefresh_isurecloud_appsecret
+</code></pre>
+<ul>
+<li>jscdn【金山云】</li>
+</ul>
+<pre><code>openc3_cdnrefresh_jscdn_access_key
+openc3_cdnrefresh_jscdn_secret_key
+</code></pre>
+<ul>
+<li>qcloud【腾讯】</li>
+</ul>
+<pre><code>openc3_cdnrefresh_qcloud_secretId
+openc3_cdnrefresh_qcloud_secretKey
+</code></pre>
+<ul>
+<li>qingcdn【白山云】</li>
+</ul>
+<pre><code>openc3_cdnrefresh_qingcdn_token
+</code></pre>
+<ul>
+<li>qingcdnPrefetch【白山云】预热</li>
+</ul>
+<pre><code>openc3_cdnrefresh_qingcdn_token
+</code></pre>
+<ul>
+<li>qiniu【七牛】</li>
+</ul>
+<pre><code>openc3_cdnrefresh_qiniu_ak
+openc3_cdnrefresh_qiniu_sk
+</code></pre>
+<ul>
+<li>ucloud【ucloud】</li>
+</ul>
+<pre><code>openc3_cdnrefresh_ucloud_public_key
+openc3_cdnrefresh_ucloud_private_key
+openc3_cdnrefresh_ucloud_project_id
+</code></pre>
+<h3 id="112">1.1.2 插件配置</h3>
+<p><img alt="" src="/attachments/20250706235121_wps105.jpg" /></p>
+<p>使用内建插件，点击cdnrefresh类型。</p>
+<p>脚本内容：</p>
+<pre><code>#!cdnrefresh
+f:/index.html
+f:/bar/index.html
+d:/foo/
+d:/abc/def/
+</code></pre>
+<p>每一行是一个要刷新的地址，文件以“f:”开头，目录以“d:”开头。</p>
+<p>脚本参数： 厂商名称 要刷新的域名【例：ucloud foo.com】</p>
+<h3 id="113">1.1.3 维护注意</h3>
+<pre><code>[root@openc3-srv-docker cdnrefresh.code]# ll /data/Software/mydan/JOB/buildin/cdnrefresh.code
+total 60
+-rwxr-xr-x. 1 root root 3189 Jul  2 22:01 aliyun
+-rwxr-xr-x. 1 root root 2172 Jul  2 20:54 aws
+-rwxr-xr-x. 1 root root 2445 Jul  2 22:03 chinacache
+-rwxr-xr-x. 1 root root 3067 Jul  2 22:04 dnion
+-rwxr-xr-x. 1 root root 2409 Jul  2 21:05 exclouds
+-rwxr-xr-x. 1 root root 3702 Jul  2 21:06 excloudsPrefetch
+-rwxr-xr-x. 1 root root 3984 Jul  2 22:07 huawei
+-rwxr-xr-x. 1 root root 2656 Jul  2 21:33 isurecloud
+-rwxr-xr-x. 1 root root 4475 Jul  2 21:36 jscdn
+-rwxr-xr-x. 1 root root 2719 Jul  2 21:53 qcloud
+-rwxr-xr-x. 1 root root 2224 Jul  2 21:55 qingcdn
+-rwxr-xr-x. 1 root root 3486 Jul  2 22:11 qingcdnPrefetch
+-rwxr-xr-x. 1 root root 3211 Jul  2 21:57 qiniu
+-rwxr-xr-x. 1 root root 3992 Jul  2 22:00 ucloud
+</code></pre>
+<p>每一个可以刷新的厂商对应该目录下一个可执行文件，现有的文件都是用python编写的，系统维护人员需要安装python依赖包。</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+  <footer style="text-align: center; font-size: 0.9em; color: #FFF; padding: 1em;background-color: #3eaae9;">
+    OPEN-C3 © 2025
+  </footer>
+
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

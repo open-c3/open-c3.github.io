@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="lijinfeng2011@gmail.com">
+        <link rel="canonical" href="https://www.open-c3.online/user-guide/%E4%BD%9C%E4%B8%9A%E5%8F%98%E9%87%8F/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>1 作业变量 - Open-C3</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Open-C3</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">首页</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../getting-started/" class="nav-link">快速开始</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../" class="nav-link">用户指南</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../dev-guide/" class="nav-link">开发指南</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../%E6%BC%94%E7%A4%BA%E7%8E%AF%E5%A2%83/" class="nav-link">演示环境</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../video-tutorials/" class="nav-link">视频教程</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">关于</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../about/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/" class="dropdown-item">联系我们</a>
+</li>
+                                    
+<li>
+    <a href="../../about/%E6%AC%A2%E8%BF%8E%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE/" class="dropdown-item">欢迎参与贡献</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/open-c3/docs/blob/main/docs/user-guide/作业变量.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#1" class="nav-link">1 作业变量</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#11" class="nav-link">1.1 作用范围</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#12" class="nav-link">1.2 特殊变量</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="1">1 作业变量</h1>
+<p>作业可以使用变量，在作业或者分组作业启动的时候需要填写空白的变量。</p>
+<p>任务启动过程中显示的变量顺序是根据变量描述进行排序的，如果要调整变量的顺序可以通过修改描述来解决。</p>
+<h2 id="11">1.1 作用范围</h2>
+<p><strong>脚本步骤</strong></p>
+<ul>
+<li>
+<p>服务器列表，一般情况下使用的是$ip。</p>
+</li>
+<li>
+<p>脚本参数。</p>
+</li>
+</ul>
+<p><strong>分发文件</strong></p>
+<ul>
+<li>
+<p>源文件来自构建, 流水线id和版本$version。</p>
+</li>
+<li>
+<p>源文件，ip列表和源文件路径，可以写成如：/tmp/abc/$foo/a.txt。</p>
+</li>
+<li>
+<p>目标文件，ip和目标路径,同上。</p>
+</li>
+</ul>
+<h2 id="12">1.2 特殊变量</h2>
+<h3 id="ip">ip</h3>
+<p>ip变量用来做机器列表传递，在任务启动的时候如果有ip变量，说明是一个需要ip变量的任务。</p>
+<p>这时候可能存在一个情况，ip变量是想获取机器分批中的机器列表。</p>
+<p>这里可以通过ip变量的描述的内容进行控制，有四种情况</p>
+<pre><code>情况一： 备注内容为 &quot;group&quot;
+在任务启动时候，会显示机器分批列表，用户选择机器列表来决定ip的值，会启动分组任务。
+
+情况二： 备注内容为 &quot;group:分批组名&quot;, 如&quot;group:abc&quot;
+任务启动时，不会显示ip字段，ip需要的信息已经选定了机器分批“abc”。会启动分组任务。
+
+情况三：备注内容为&quot;group:val=ip1,ip2&quot;,如 &quot;group:val=10.10.10.1,10.10.10.2&quot;
+任务启动时，不会显示ip字段，ip内容值为val=指定的部分，会启动分组任务。
+
+情况四，如果备注内容不是以上三种情况则为第四总情况
+启动任务时，会显示ip字段，用户手动填写ip列表，多个ip用逗号分隔。会启动作业任务。
+</code></pre>
+<h3 id="_rollbackversion_">_rollbackVersion_</h3>
+<p>分组作业执行过程中，如果是需要进行回滚的任务，把回滚的版本写到变量_rollbackVersion_中。</p>
+<p>在触发回滚时，分组作业会把_rollbackVersion_中的任务替换成version变量启动回滚作业。</p>
+<p>_rollbackVersion_变量为分组作业使用的特殊变量，所以在该变量有值的情况下提交任务，</p>
+<p>会把这个变量提交给分组作业接口。</p>
+<h3 id="_exit_">_exit_</h3>
+<p>一般情况下作业步骤中遇到错误的时候，作业会卡住然后发送通知给运维或者研发确认后手动重试。</p>
+<p>但是在某些情况下可能需要任务遇到失败后直接退出。比如测试环境的发布。</p>
+<p>_exit_可以为如下情况：</p>
+<ul>
+<li>
+<p>_exit_等于1或者true。作业遇到“执行命令”或者“同步文件”失败时任务直接退出。</p>
+</li>
+<li>
+<p>_exit_等于cmd，作业任务遇到“执行命令”步骤失败时直接退出。</p>
+</li>
+<li>
+<p>_exit_等于scp，作业任务遇到“同步文件”步骤失败时直接退出。</p>
+</li>
+</ul>
+<h3 id="_appname_">_appname_</h3>
+<p>用于标记作业对应的应用名称，在业务管理中变量查看可以看到对应的变量。</p>
+<p>_appname_为abc时，变量查看中看到的变量为APP_abc_VERSION。</p>
+<p>如果不设置_appname_变量，在变量查看中看到的变量是VERSION。</p>
+<p>一个服务树节点如果不定义该变量，多个应用的版本会混合在一起无法区分。</p>
+<h3 id="_skipsameversion_">_skipSameVersion_</h3>
+<p>_skipSameVersion_变量是在任务执行过程中，如果该分组要跑的任务的版本和它当前的版本一致，</p>
+<p>则会跳过该任务，任务会直接退出成功返回。</p>
+<p>需要结合_appname_变量一起使用。</p>
+<h3 id="_authorization_">_authorization_</h3>
+<p>直接触发作业需要的权限是openc3_job_write，默认情况下运维角色才有这个权限点。</p>
+<p>研发有openc3_job_control的权限点，该权限点可以控制作业的重试等功能。</p>
+<p>如果作业中添加了_authorization_ 等于“true”的变量，</p>
+<p>那么在作业或者分组作业启动过程只验证openc3_job_control权限点。也就是授权给研发触发该作业。</p>
+<h3 id="_pip_">_pip_</h3>
+<p>流水线的作业中如果添加了该变量，流水线发布时可以指定发布的主机列表。</p>
+<p>在轻应用的时候也可以使用，设置一个变量_pip_等于1，就会在ip选项下面多出来一个“选择服务器”的按钮。</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+  <footer style="text-align: center; font-size: 0.9em; color: #FFF; padding: 1em;background-color: #3eaae9;">
+    OPEN-C3 © 2025
+  </footer>
+
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

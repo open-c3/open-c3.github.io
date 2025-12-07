@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="lijinfeng2011@gmail.com">
+        <link rel="canonical" href="https://www.open-c3.online/user-guide/%E7%AE%A1%E7%90%86%E5%91%98/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>1 管理员 - Open-C3</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Open-C3</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">首页</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../getting-started/" class="nav-link">快速开始</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../" class="nav-link">用户指南</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../dev-guide/" class="nav-link">开发指南</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../%E6%BC%94%E7%A4%BA%E7%8E%AF%E5%A2%83/" class="nav-link">演示环境</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../video-tutorials/" class="nav-link">视频教程</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">关于</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../about/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/" class="dropdown-item">联系我们</a>
+</li>
+                                    
+<li>
+    <a href="../../about/%E6%AC%A2%E8%BF%8E%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE/" class="dropdown-item">欢迎参与贡献</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/open-c3/docs/blob/main/docs/user-guide/管理员.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#1" class="nav-link">1 管理员</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#11" class="nav-link">1.1 简介</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#12" class="nav-link">1.2 通知管理</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#13" class="nav-link">1.3 模版管理</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#14" class="nav-link">1.4 系统状态</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#15" class="nav-link">1.5 监控信息</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#16" class="nav-link">1.6 审计日志</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#17" class="nav-link">1.7 轻应用</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#18" class="nav-link">1.8 地址簿管理</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#19" class="nav-link">1.9 私有节点管理</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="1">1 管理员</h1>
+<h2 id="11">1.1 简介</h2>
+<p>这部分描述的是管理员页面，只有管理员才能看到这些页面。非管理员可以忽略。</p>
+<p><img alt="" src="/attachments/20250707010031_wps160.jpg" /></p>
+<h2 id="12">1.2 通知管理</h2>
+<p>通知开关是一个全局的设置，会在所有服务树节点上生效。</p>
+<p>可以按照如下配置把通知开关打开。</p>
+<p><img alt="" src="/attachments/20250707010031_wps161.jpg" /></p>
+<h2 id="13">1.3 模版管理</h2>
+<p>通知模版是一个全局的设置，会在所有服务树节点上生效。</p>
+<p>系统中包含六个模版，每个模版右上角存在一个默认的模版，可以通过该按钮生成默认的模版内容，</p>
+<p>如果有需要，可以在这个基础上进行二次修改。</p>
+<p><img alt="" src="/attachments/20250707010031_wps162.jpg" /></p>
+<h2 id="14">1.4 系统状态</h2>
+<p>通过系统状态可以查看OPEN-C3系统运行是否正常。</p>
+<p><img alt="" src="/attachments/Pasted_image_20251206173823.png" /></p>
+<h2 id="15">1.5 监控信息</h2>
+<p>OPEN-C3系统默认会采集系统自身需要监控的指标，可以通过“监控信息”页面查看系统的健康状况。</p>
+<p>在“维护-&gt;系统监控”有详细描述怎么通过该信息进行监控。点击查看详情</p>
+<h2 id="16">1.6 审计日志</h2>
+<p>OPEN-C3的所有操作都会有审计日志。管理员可以进行查看。</p>
+<p>页面路径：【管理员】-&gt;【审计日志】</p>
+<h3 id="_1">审计日志</h3>
+<p>管理员可以在全局信息中看到如下的审计日志，包含了用户的所有操作。</p>
+<p><img alt="" src="/attachments/20250707010031_wps163.jpg" /></p>
+<pre><code>查询方式：
+时间： like str%, 即前缀匹配
+用户: == str，即全匹配
+标题: like %str% 即模糊匹配
+内容: like %str% 即模糊匹配
+</code></pre>
+<h3 id="_2">审计日志说明</h3>
+<p>JOBX 分组作业</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>CREATE BATCH</td>
+<td>TREEID:$id BATCHNAME:$name</td>
+<td>创建机器分批</td>
+</tr>
+<tr>
+<td>EDIT BATCH</td>
+<td>TREEID:$id BATCHNAME:$name</td>
+<td>编辑机器分批</td>
+</tr>
+<tr>
+<td>DELETE BATCH</td>
+<td>TREEID:$id BATCHNAME:$name</td>
+<td>删除机器分批</td>
+</tr>
+<tr>
+<td>START JOBX</td>
+<td>TREEID:$id JOBNAME:$jobname BATCHNAME:$groupname</td>
+<td>启动分组作业任务</td>
+</tr>
+<tr>
+<td>JOBX TASK ROLLBACK</td>
+<td>TREEID:$id UUID:$uuid ROLLBACK:[Yes/No]</td>
+<td>选择是否回滚分组作业</td>
+</tr>
+<tr>
+<td>KILL JOBX</td>
+<td>TREEID:$id TASKUUID:$name</td>
+<td>停止分组作业任务</td>
+</tr>
+</tbody>
+</table>
+<p>FLOWLINE 流水线</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>CREATE FLOWLINE</td>
+<td>TREEID:$id FLOWLINEID:$flowid NAME:$name</td>
+<td>创建流水线</td>
+</tr>
+<tr>
+<td>EDIT FLOWLINE CI</td>
+<td>TREEID:$id FLOWLINEID:$flowid NAME:$name</td>
+<td>编辑流水线</td>
+</tr>
+<tr>
+<td>DELETE FLOWLINE</td>
+<td>TREEID:$id FLOWLINEID:$flowid NAME:$name</td>
+<td>删除流水线</td>
+</tr>
+</tbody>
+</table>
+<p>FAVORITES 收藏夹</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>ADD FAVORITES</td>
+<td>FLOWLINEID:$flowlineid NAME:$name</td>
+<td>添加收藏</td>
+</tr>
+<tr>
+<td>DEL FAVORITES</td>
+<td>FLOWLINEID:$flowlineid NAME:$name</td>
+<td>删除收藏</td>
+</tr>
+</tbody>
+</table>
+<p>IMAGE 镜像</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>CREATE IMAGE</td>
+<td>NAME:$name</td>
+<td>创建镜像</td>
+</tr>
+<tr>
+<td>EDIT IMAGE</td>
+<td>IMAGEID:$id NAME:$name</td>
+<td>编辑镜像</td>
+</tr>
+<tr>
+<td>DELETE IMAGE</td>
+<td>IMAGEID:$id NAME:$name</td>
+<td>删除镜像</td>
+</tr>
+<tr>
+<td>UPLOAD IMAGE</td>
+<td>IMAGEID:$id NAME:$name</td>
+<td>上传镜像文件</td>
+</tr>
+</tbody>
+</table>
+<p>TICKET 镜像</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>CREATE TICKET</td>
+<td>NAME:$name</td>
+<td>创建票据</td>
+</tr>
+<tr>
+<td>EDIT TICKET</td>
+<td>TICKETID:$id NAME:$name</td>
+<td>编辑票据</td>
+</tr>
+<tr>
+<td>DELETE TICKET</td>
+<td>TICKETID:$id NAME:$name</td>
+<td>删除票据</td>
+</tr>
+</tbody>
+</table>
+<p>RELY 依赖</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>ADD RELY</td>
+<td>FLOWLINEID:$id ADDR:$addr</td>
+<td>构建添加项目依赖</td>
+</tr>
+<tr>
+<td>DEL RELY</td>
+<td>FLOWLINEID:$id ADDR:$addr</td>
+<td>删除依赖</td>
+</tr>
+</tbody>
+</table>
+<p>FIND TAGS 依赖</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>FIND TAGS</td>
+<td>TREEID:$id FLOWLINEID:$id</td>
+<td>触发find tags</td>
+</tr>
+<tr>
+<td>KILL BUILD</td>
+<td>FLOWLINEID:$id TAG:$tag</td>
+<td>停止某个版本的构建</td>
+</tr>
+<tr>
+<td>START BUILD</td>
+<td>TREEID:$id FLOWLINEID:$id TAG:$tag</td>
+<td>触发一个构建任务</td>
+</tr>
+<tr>
+<td>STOP ALL BUIL</td>
+<td>TREEID:$id FLOWLINEID:$id</td>
+<td>停止流水线中所有的构建</td>
+</tr>
+</tbody>
+</table>
+<p>SUBNET 代理子网</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>ADD SUBNET</td>
+<td>TREEID:$id REGIONID:$id SUBNET:$subnet</td>
+<td>添加子网</td>
+</tr>
+<tr>
+<td>DEL SUBNET</td>
+<td>TREEID:$id SUBNET:$subnet</td>
+<td>删除子网</td>
+</tr>
+</tbody>
+</table>
+<p>AGENT CHECK 检测agent状态</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>AGENT CHECK</td>
+<td>TREEID:$id STATUS:[on/off]</td>
+<td>服务树定时检测agent状态开关</td>
+</tr>
+</tbody>
+</table>
+<p>代理</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>USE REGION</td>
+<td>TREEID:$id REGIONID:$id REGIONNAME:$name</td>
+<td>服务树节点下使用勾选了某区域</td>
+</tr>
+<tr>
+<td>OUT REGION</td>
+<td>TREEID:$id REGIONID:$id REGIONNAME:$name</td>
+<td>服务树节点下使用不勾选某区域</td>
+</tr>
+<tr>
+<td>ADD PROXY</td>
+<td>TREEID:$id REGIONID:$id PROXYIP:$ip</td>
+<td>添加代理</td>
+</tr>
+<tr>
+<td>DEL PROXY</td>
+<td>TREEID:$id REGIONID:$id PROXYIP:$ip</td>
+<td>删除代理</td>
+</tr>
+<tr>
+<td>ADD REGION</td>
+<td>TREEID:$id NAME:$name</td>
+<td>添加新区域</td>
+</tr>
+<tr>
+<td>DEL REGION</td>
+<td>TREEID:$id NAME:$name</td>
+<td>删除区域</td>
+</tr>
+</tbody>
+</table>
+<p>审批</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>USR APPROVAL</td>
+<td>UUID:$approvaluuid OPINION:[agree/refuse]</td>
+<td>个人审批动作</td>
+</tr>
+<tr>
+<td>KEY APPROVAL</td>
+<td>UUID:$approvaluuid OPINION:[agree/refuse]</td>
+<td>个人审批动作，通过API，不能确认操作人</td>
+</tr>
+</tbody>
+</table>
+<p>crontat 定时任务</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>CREATE CRONTAB</td>
+<td>TREEID:$id NAME:$name</td>
+<td>创建定时任务</td>
+</tr>
+<tr>
+<td>EDIT CRONTAB</td>
+<td>TREEID:$id NAME:$name</td>
+<td>编辑定时任务</td>
+</tr>
+<tr>
+<td>SWITCH CRONTAB</td>
+<td>TREEID:$id NAME:$name STATUS:[available/unavailable]</td>
+<td>修改定时任务开关</td>
+</tr>
+<tr>
+<td>DELETE CRONTAB</td>
+<td>TREEID:$id NAME:$name</td>
+<td>删除定时任务</td>
+</tr>
+</tbody>
+</table>
+<p>environment 编辑了通知管理和模版管理</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>EDIT ENVIRONMENT</td>
+<td>_</td>
+<td>编辑了通知管理或者模版管理</td>
+</tr>
+</tbody>
+</table>
+<p>fileserver 文件上传</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>USER UPLOAD FILE</td>
+<td>TREEID:$id FILENAME:$filename</td>
+<td>用户通过页面上传文件</td>
+</tr>
+<tr>
+<td>TOKEN UPLOAD FILE</td>
+<td>TREEID:$id FILENAME:$filename</td>
+<td>脚本通过token上传文件</td>
+</tr>
+<tr>
+<td>DELETE FILE</td>
+<td>TREEID:$id FILENAME:$filename</td>
+<td>脚本通过token上传文件</td>
+</tr>
+</tbody>
+</table>
+<p>job 作业编辑</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>CREATE JOB</td>
+<td>TREEID:$id NAME:$filename</td>
+<td>创建作业</td>
+</tr>
+<tr>
+<td>EDIT JOB</td>
+<td>TREEID:$id NAME:$filename</td>
+<td>编辑作业</td>
+</tr>
+<tr>
+<td>DELETE JOB</td>
+<td>TREEID:$id NAME:$filename</td>
+<td>删除作业</td>
+</tr>
+</tbody>
+</table>
+<p>nodegroup 机器分组</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>CREATE NODEGROUP</td>
+<td>TREEID:$id NAME:$name</td>
+<td>创建分组</td>
+</tr>
+<tr>
+<td>EDIT NODEGROUP</td>
+<td>TREEID:$id NAME:$name</td>
+<td>编辑分组</td>
+</tr>
+<tr>
+<td>DELETE NODEGROUP</td>
+<td>TREEID:$id NAME:$name</td>
+<td>删除分组</td>
+</tr>
+</tbody>
+</table>
+<p>nodelist 机器管理，给服务树节点添加额外机器</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>ADD NODELIST</td>
+<td>TREEID:$id NAME:$name</td>
+<td>添加机器</td>
+</tr>
+<tr>
+<td>DEL NODELIST</td>
+<td>TREEID:$id NAME:$name</td>
+<td>删除机器</td>
+</tr>
+</tbody>
+</table>
+<p>notify 报警通知人</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>ADD NOTIFY</td>
+<td>TREEID:$id USER:$user</td>
+<td>添加报警接收人</td>
+</tr>
+<tr>
+<td>DEL NOTIFY</td>
+<td>TREEID:$id USER:$user</td>
+<td>删除报警接收人</td>
+</tr>
+</tbody>
+</table>
+<p>scripts 脚本管理</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>CREATE SCRIPTS</td>
+<td>TREEID:$id USER:$name</td>
+<td>添加脚本</td>
+</tr>
+<tr>
+<td>EDIT SCRIPTS</td>
+<td>TREEID:$id USER:$name</td>
+<td>编辑脚本</td>
+</tr>
+<tr>
+<td>DELETE SCRIPTS</td>
+<td>TREEID:$id USER:$name</td>
+<td>删除脚本</td>
+</tr>
+</tbody>
+</table>
+<p>job subtask 作业子任务控制</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>JOB SUBTASK CONTROL</td>
+<td>TREEID:$id TASKUUID:$taskuuid SUBTASKUUID:$subtaskuuid CONTROL:[next/fail/running/ignore]</td>
+<td>添加脚本</td>
+</tr>
+</tbody>
+</table>
+<p>job task 作业子任务控制</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>TASK REDO</td>
+<td>TREEID:$id TASKUUID:$taskuuid</td>
+<td>从做任务</td>
+</tr>
+<tr>
+<td>START JOB TASK</td>
+<td>TREEID:$id JOBUUID:$jobuuid</td>
+<td>启动任务</td>
+</tr>
+<tr>
+<td>START JOB CMD</td>
+<td>TREEID:$id TASKNAME:$name TASKUUID:$uuid</td>
+<td>快速启动脚本</td>
+</tr>
+<tr>
+<td>START JOB SCP</td>
+<td>TREEID:$id TASKNAME:$name TASKUUID:$uuid</td>
+<td>快速同步文件</td>
+</tr>
+<tr>
+<td>START JOB APPROVAL</td>
+<td>TREEID:$id TASKNAME:$name TASKUUID:$uuid</td>
+<td>快速审批</td>
+</tr>
+<tr>
+<td>KILL JOB TASK</td>
+<td>TREEID:$id TASKUUID:$uuid NAME:$name</td>
+<td>停止作业任务</td>
+</tr>
+</tbody>
+</table>
+<p>job vv 变量管理</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>DELETE VV</td>
+<td>TREEID:$id NODE:$node</td>
+<td>删除node相关的变量查看中的记录</td>
+</tr>
+</tbody>
+</table>
+<p>connector 连接器</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>EDIT CONNECTOR CONFIG</td>
+<td>_</td>
+<td>修改连接器配置</td>
+</tr>
+</tbody>
+</table>
+<p>sendfile 文件发送</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>UNLINK FILE</td>
+<td>TREEID:$id SUDO:$sudo PATH:$host/$path</td>
+<td>删除线上机器文件</td>
+</tr>
+</tbody>
+</table>
+<p>smallapplication 轻应用</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>CREATE SMALLAPPLICATION</td>
+<td>NAME:$name</td>
+<td>创建轻应用</td>
+</tr>
+<tr>
+<td>EDIT SMALLAPPLICATION</td>
+<td>NAME:$name</td>
+<td>编辑轻应用</td>
+</tr>
+<tr>
+<td>DELETE SMALLAPPLICATION</td>
+<td>NAME:$name</td>
+<td>删除轻应用</td>
+</tr>
+</tbody>
+</table>
+<p>useraddr 地址簿</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>标题</strong></td>
+<td><strong>内容</strong></td>
+<td><strong>解释</strong></td>
+</tr>
+<tr>
+<td>CREATE USERADDR</td>
+<td>USER:$user EMAIL:$email PHONE:$phone</td>
+<td>添加地址簿</td>
+</tr>
+<tr>
+<td>DELETE USERADDR</td>
+<td>USER:$user EMAIL:$email PHONE:$phone</td>
+<td>删除地址簿</td>
+</tr>
+</tbody>
+</table>
+<h2 id="17">1.7 轻应用</h2>
+<p>在运维和运营过程中，我们通过OPEN-C3的作业编排功能固化下一个流程，</p>
+<p>这个流程可能是一个资源编排，也可能是一个更新服务的动作，也可能是一个申请权限的操作。</p>
+<p>但是我们所有的作业流程都是分散在服务树节点中的，同时也和很多其他类型的作业进行了混搅。</p>
+<p>所以OPEN-C3提供了一个方式，把一些常用的，或者需要提供给研发、运营使用的流程集中在一个页面进行归类。</p>
+<p>这些流程很简明的完成了一个动作，我们称之为“轻应用”。</p>
+<h3 id="_3">使用</h3>
+<p>使用轻应用需要几个步骤：</p>
+<ul>
+<li>
+<p>学习OPEN-C3作业任务的用法。</p>
+</li>
+<li>
+<p>管理员在【管理员】-&gt;【轻应用配置】页面把需要设置成轻应用的作业挑选出来。</p>
+</li>
+</ul>
+<p><img alt="" src="/attachments/20250707010031_wps164.jpg" /></p>
+<h2 id="18">1.8 地址簿管理</h2>
+<p>OPEN-C3系统定位一个用户是通过用户的name字段，在和不同的系统进行对接的过程中，</p>
+<p>建议把用户的邮箱作为name的内容，避免名称重复而冲突。</p>
+<p>以此同时，OPEN-C3在构建、作业调用、审批的情况下会给用户发送邮件和消息。</p>
+<p>正常情况下，外部连接器需要接收name字段后解析用户的邮箱地址或者手机号后才进行消息发送。</p>
+<p>但是在有些情况下，外部连接器发送消息的接口没有和整体连接器进行对接，没有去解析用户的真实邮箱或者手机号。</p>
+<p>OPEN-C3系统默认带着地址簿，如果地址簿中记录了用户的信息，</p>
+<p>在发送信息之前会先在地址簿中进行转化，如果能转换成功则把转换后的地址发送给消息出口进行消息推送。</p>
+<h2 id="19">1.9 私有节点管理</h2>
+<p>在某些情况下，如需要给研发人员某个机器的权限，可以通过私有节点进行管理。</p>
+<p>这里涉及到两个服务树节点，每个用户的服务树至少包含两个节点：</p>
+<p>v private: 所有用户都有权限操作的节点，可以放一些共享的测试环境。</p>
+<p>v private.自己的用户名 ：只有自己有权限。</p>
+<p>在这两个节点中用户除了在"业务管理-&gt;机器管理"中不能添加和删除机器，其他功能都有可操作权限。</p>
+<h3 id="_4">管理员</h3>
+<p>管理员如果需要给研发分配某个机器的权限，可以在"管理员-&gt;私有节点管理"中进行授权。</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+  <footer style="text-align: center; font-size: 0.9em; color: #FFF; padding: 1em;background-color: #3eaae9;">
+    OPEN-C3 © 2025
+  </footer>
+
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
