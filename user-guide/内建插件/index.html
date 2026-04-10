@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="lijinfeng2011@gmail.com">
+        <link rel="canonical" href="https://www.open-c3.online/user-guide/%E5%86%85%E5%BB%BA%E6%8F%92%E4%BB%B6/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>1 内建插件 - Open-C3</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Open-C3</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">首页</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../getting-started/" class="nav-link">快速开始</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../" class="nav-link">用户指南</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../dev-guide/" class="nav-link">开发指南</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../%E6%BC%94%E7%A4%BA%E7%8E%AF%E5%A2%83/" class="nav-link">演示环境</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../video-tutorials/" class="nav-link">视频教程</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">关于</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../about/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/" class="dropdown-item">联系我们</a>
+</li>
+                                    
+<li>
+    <a href="../../about/%E6%AC%A2%E8%BF%8E%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE/" class="dropdown-item">欢迎参与贡献</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/open-c3/docs/blob/main/docs/user-guide/内建插件.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#1" class="nav-link">1 内建插件</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#11" class="nav-link">1.1 说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#12" class="nav-link">1.2 开发</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#13" class="nav-link">1.3 插件</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="1">1 内建插件</h1>
+<p>系统内置了如下内建插件：</p>
+<ul>
+<li>
+<p>kubectl : 用于发布kubernetes服务，支持原生kubectl的所有命令。</p>
+</li>
+<li>
+<p>terraform ：用于资源编排。</p>
+</li>
+<li>
+<p>kubestar.v2(推荐) ： 用于通过kubestar发布kubernetes服务。</p>
+</li>
+<li>
+<p>kubestar(不推荐)： 同上。</p>
+</li>
+<li>
+<p>awsecs ： 用于发布AWS中ECS服务。</p>
+</li>
+<li>
+<p>sendemail ：用于发送邮件。</p>
+</li>
+<li>
+<p>sendmesg ： 用于发送消息，根据连接器配置而定，可能是短信也可能是im消息。</p>
+</li>
+<li>
+<p>flowcaller ： 用于调用流水线进行应用群发布。</p>
+</li>
+<li>
+<p>cdnrefresh ： 对各CDN厂商的CDN进行刷新。</p>
+</li>
+</ul>
+<h2 id="11">1.1 说明</h2>
+<pre><code>为了扩展作业步骤所能完成的处理逻辑，OPEN-C3定义了一个内建插件的功能。
+
+内建插件是一个可执行的二进制程序或者脚本，执行过程会在OPEN-C3所部署的服务器中执行。
+
+可以根据需要开发，如需要添加新的内建插件，请提交插件到如下地址：
+
+https://github.com/open-c3/open-c3/tree/v2.2.0/JOB/buildin/  # 其中v2.2.0 是您使用的OPEN-C3版本。
+</code></pre>
+<h2 id="12">1.2 开发</h2>
+<p>通过环境变量往插件中传递参数，参数如下：</p>
+<ul>
+<li>
+<p>$ENV{CONFIGPATH}: 配置文件,也就是脚本内容文本文件路径</p>
+</li>
+<li>
+<p>$ENV{JOBUUID} : 运行该任务的作业的UUID，如不是作业该变量为空</p>
+</li>
+<li>
+<p>$ENV{NODE} ： 机器列表，用逗号分隔</p>
+</li>
+<li>
+<p>$ENV{TICKETFILE} : 票据文件路径</p>
+</li>
+<li>
+<p>$ENV{TIMEOUT} ： 超时时间</p>
+</li>
+<li>
+<p>$ENV{TREEID} ： 服务树ID</p>
+</li>
+<li>
+<p>$ENV{TASKUUID} ： 任务UUID</p>
+</li>
+</ul>
+<p>返回： 插件需要在标准输出中输出“机器ip:ok”，每个操作对象一行，表示该操作对象操作成功。</p>
+<h2 id="13">1.3 插件</h2>
+<h3 id="131-kubectl">1.3.1 kubectl</h3>
+<p>kubectl 插件支持原生的kubectl命令，需要两个部分配置。</p>
+<p>先在票据管理中配置好kubeconfig，在作业步骤中选择上票据后在脚本参数中写上kubectl命令的参数。</p>
+<p>其中kubectl可能需要文件，如apply -f app.yaml，文件来源可以有如下两种</p>
+<pre><code>情况1: 文件来源于代码仓库
+
+如果是在流水线中使用的kubectl插件，kubectl运行的当前目录下有构建当前版本的文件，可以直接使用。
+
+如代码中有abc.yaml文件，可以直接通过“apply -f abc.yaml”来使用文件。
+
+情况二: 文件来源于当前步骤的配置
+
+可以把需要的文件内容写到“脚本内容”中，然后可以通过关键字CONFIGFILE来指定，如：apply -f CONFIGFILE。
+</code></pre>
+<p><strong>票据管理</strong></p>
+<p>在个人票据中管理自己的票据。票据类型选择“作业内建插件”。</p>
+<p>票据内容为kubeconfig的内容。</p>
+<p><img alt="" src="/attachments/20250707002437_wps134.jpg" /></p>
+<p><strong>步骤配置例子</strong></p>
+<ol>
+<li>镜像更新</li>
+</ol>
+<p>脚本参数：set image deployment/nginx c3test-nginx=nginx:$version -n c3test</p>
+<ol>
+<li>发布检查</li>
+</ol>
+<p>脚本参数：check c3test deployment/nginx c3test-nginx=nginx:$version</p>
+<p>注：check是OPEN-C3扩展的参数。</p>
+<ol>
+<li>应用发布</li>
+</ol>
+<pre><code>#!kubectl
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kube100-site
+  labels:
+    app: web
+spec:
+  containers:
+    - name: front-end
+      image: nginx:DEPLOYVERSION
+      ports:
+        - containerPort: 80
+    - name: flaskapp-demo
+      image: jcdemo/flaskapp
+      ports:
+        - containerPort: 5000
+</code></pre>
+<p>脚本中用到了关键字${VERSION}, 系统调用过程如果存在构建版本$version,会用$version变量的内容替换${VERSION}。</p>
+<p>脚本参数：apply -f CONFIGFILE -n c3test</p>
+<ol>
+<li>引用代码仓库中的文件</li>
+</ol>
+<p>脚本参数：apply -f pod-app.yaml -n c3test</p>
+<p><strong>维护注意</strong></p>
+<p>需要手动维护OPEN-C3服务所在机器的kubectl命令【单机版更新的是容器中的kubectl】。</p>
+<pre><code>wget https://github.com/open-c3/open-c3-install-cache/job-buildin/kubectl -O /bin/kubectl
+chmod +x /bin/kubectl
+</code></pre>
+<h3 id="132-terraform">1.3.2 terraform</h3>
+<p>OPEN-C3提供了内建插件用于调用terraform，通过这个插件可以做资源编排。</p>
+<h3 id="_1">配置文件</h3>
+<p>config文件配置</p>
+<p><img alt="" src="/attachments/20250707002437_wps135.jpg" /></p>
+<p>使用内建插件，点击选择terraform类型。</p>
+<p>脚本内容示例如下：</p>
+<pre><code>#!terraform
+provider &quot;aws&quot; {
+    access_key = &quot;XXXXXX&quot;
+    secret_key = &quot;XXXXXX&quot;
+    region = &quot;us-east-1&quot;
+}
+
+resource &quot;aws_instance&quot; &quot;web&quot; {
+    ami = &quot;ami-2757f631&quot;
+    instance_type = &quot;t2.micro&quot;
+    count             = 3
+    subnet_id = &quot;${var.subnetid}&quot;
+}
+
+resource &quot;aws_lb&quot; &quot;weblb&quot; {
+  name               = &quot;weblb&quot;
+  internal           = false
+  load_balancer_type = &quot;application&quot;
+  security_groups    = &quot;${var.sgs}&quot;
+  subnets            = &quot;${var.subnetids}&quot;
+  enable_deletion_protection = false
+}
+
+resource &quot;aws_lb_listener&quot; &quot;front_end&quot; {
+  load_balancer_arn = aws_lb.weblb.arn
+  port              = &quot;80&quot;
+  protocol          = &quot;HTTP&quot;
+  default_action {
+    type             = &quot;forward&quot;
+    target_group_arn = aws_lb_target_group.webserver.arn
+  }
+}
+
+resource &quot;aws_lb_target_group&quot; &quot;webserver&quot; {
+  name     = &quot;webserver-targetgroup&quot;
+  port     = 80
+  protocol = &quot;HTTP&quot;
+  vpc_id   = &quot;${var.vpcid}&quot;
+}
+
+resource &quot;aws_lb_target_group_attachment&quot; &quot;web1&quot; {
+  target_group_arn = aws_lb_target_group.webserver.arn
+  target_id        = aws_instance.web[0].id
+  port             = 80
+}
+
+resource &quot;aws_lb_target_group_attachment&quot; &quot;web2&quot; {
+  target_group_arn = aws_lb_target_group.webserver.arn
+  target_id        = aws_instance.web[1].id
+  port             = 80
+}
+
+resource &quot;aws_lb_target_group_attachment&quot; &quot;test&quot; {
+  target_group_arn = aws_lb_target_group.webserver.arn
+  target_id        = aws_instance.web[0].id
+  port             = 80
+}
+
+variable &quot;vpcid&quot; {
+    default = &quot;vpc-07d7ed83ee7375813&quot;
+}
+
+variable &quot;subnetid&quot; {
+    default = &quot;subnet-0b7fd82a07b9b7f66&quot;
+}
+
+variable &quot;subnetids&quot; {
+    default = [&quot;subnet-0b7fd82a07b9b7f66&quot;, &quot;subnet-08966f2af1fd1e3d8&quot;]
+}
+
+variable &quot;sgs&quot; {
+    default = [&quot;sg-08f7116e2c9325edb&quot;]
+}
+</code></pre>
+<p>票据： 空。上面配置的方式中key已经在配置文件中，所以这里不需要票据。</p>
+<p>脚本参数： config</p>
+<pre><code>注： 每个terraform作业在系统中都会有一个独立的目录存放config文件。每个config可以编辑一个文件。
+
+可以添加多个config步骤，如脚本参数中写 config lb.tf 。
+
+则在目录中会有一个lb.tf文件。当脚本参数为config时候，其实是config main.tf。
+</code></pre>
+<ol>
+<li>操作动作</li>
+</ol>
+<p>有四个操作动作：init、plan、apply、destory</p>
+<p>四个动作可以在一个步骤中执行，执行过程中按照脚本参数的顺序进行调用。</p>
+<p>所以可以配置如下：</p>
+<p>1.1. init &amp; plan</p>
+<p>使用内建插件，点击选择terraform类型。</p>
+<p>脚本内容固定为如下：</p>
+<pre><code>#!terraform
+</code></pre>
+<p>票据： 空 脚本参数： init plan</p>
+<p>这里是把init和plan两个动作在这里按照顺序执行，执行后可以在日志中看出如果真实执行apply的资源变化情况。</p>
+<p>正常应该在plan之后添加一步审批操作，审批后执行下一步的apply。</p>
+<p><img alt="" src="/attachments/20250707002437_wps136.jpg" /></p>
+<p>1.2. apply</p>
+<p>使用内建插件，点击选择terraform类型。</p>
+<p>脚本内容固定为如下：</p>
+<pre><code>#!terraform
+</code></pre>
+<p>票据： 空 脚本参数： apply</p>
+<p><img alt="" src="/attachments/20250707002437_wps137.jpg" /></p>
+<p>1.3. destroy</p>
+<p>和apply几乎一样，把脚本参数换成destory即可。destroy用户销毁资源 。</p>
+<p><strong>票据</strong></p>
+<p>下面以AWS为例说明怎么管理票据，AWS通过下面两个环境变量来控制访问的key。</p>
+<pre><code>export AWS_ACCESS_KEY_ID=&quot;XXXX&quot;
+export AWS_SECRET_ACCESS_KEY=&quot;XXXX&quot;
+</code></pre>
+<p>每一行的内容格式必须为： /^export\s+[A-Za-z0-9_]+="[A-Za-z0-9\/]+"\s*$/ 否则系统会提示错误。</p>
+<p><img alt="" src="/attachments/20250707002437_wps138.jpg" /></p>
+<p>如果确定使用票据的方式，在前面配置作业的过程中，除了config步骤，其他操作terraform 的步骤选择上票据。</p>
+<p><strong>维护注意</strong></p>
+<p>需要手动维护OPEN-C3服务所在机器的terraform命令【单机版更新的是容器中的terraform】。</p>
+<pre><code>wget https://github.com/open-c3/open-c3-install-cache/job-buildin/terraform -O /bin/terraform
+chmod +x /bin/terraform
+</code></pre>
+<h3 id="133-awsecs">1.3.3  awsecs</h3>
+<p>awsecs作业内建插件用于发布AWS的ECS服务。</p>
+<p><strong>票据</strong></p>
+<p>在流水线使用过程中CI部分需要用awsecr_push_image.pl把构建的包build成镜像上传到AWS的ECR服务中。</p>
+<p><strong>配置作业流程</strong></p>
+<ol>
+<li>apply （应用）</li>
+</ol>
+<p>发布应用，是一次发布的操作。</p>
+<p><img alt="" src="/attachments/20250707002437_wps139.jpg" /></p>
+<p>使用内建插件，点击awsecs类型。</p>
+<p>脚本内容：</p>
+<pre><code>#!awsecs
+task-definition: test-front-service
+region: cn-northwest-1
+cluster: testfoo
+service: test-front-service
+</code></pre>
+<p>脚本参数： apply $version</p>
+<ol>
+<li>check（检查发布状态）</li>
+</ol>
+<p>配置和apply基本一样，在脚本参数改成 check 即可。</p>
+<p>系统会在超时时间内每10秒检查一下服务的状态，直到对应的服务当前检查的版本是Running状态后退出。</p>
+<p><img alt="" src="/attachments/20250707002437_wps140.jpg" /></p>
+<p><strong>维护注意</strong></p>
+<p>使用该插件需要安装aws命令，安装方式awsecr_push_image.pl 处查看。</p>
+<h3 id="134-sendemail">1.3.4 sendemail</h3>
+<p>sendemail插件用于发送邮件。发送的邮件标题默认会添加“OPEN-C3:”前缀。</p>
+<p>注： 该部分不会进行用户地址簿转换，需要直接写邮箱地址。</p>
+<p><strong>使用方式</strong></p>
+<p>脚本内容第一行为邮件标题，其他脚本内容为邮件内容</p>
+<p>脚本参数为邮件接收人列表，多个人用逗号或者空格分隔。</p>
+<p>例：</p>
+<p>脚本内容：</p>
+<pre><code>#!sendemail
+邮件测试
+邮件内容第一行
+邮件内容第二行 abc
+</code></pre>
+<p>脚本参数：</p>
+<pre><code>foo@abc.com,bar@gmail.com
+</code></pre>
+<h3 id="135-sendmesg">1.3.5 sendmesg</h3>
+<p>sendmesg插件用于发送消息（短信或者飞书等，根据连接器中配置的消息出口而定）。</p>
+<p>发送的消息默认会添加“OPEN-C3:”前缀。</p>
+<p>注： 该部分不会进行用户地址簿转换，如果要发送短信需要直接写手机号。</p>
+<p><strong>使用方式</strong></p>
+<p>脚本内容为消息内容</p>
+<p>脚本参数为消息接收人列表，多个人用逗号或者空格分隔。</p>
+<p>例：</p>
+<p>脚本内容：</p>
+<pre><code>#!sendmesg
+消息内容123
+消息内容第二行 。。。
+</code></pre>
+<p>脚本参数：</p>
+<pre><code>foo@abc.com,bar@gmail.com,133113xxxxx
+</code></pre>
+<h3 id="136-flowcaller">1.3.6 flowcaller</h3>
+<p>OPEN-C3提供的一个方式，支持在作业步骤中可以调用流水线进行应用群发布。</p>
+<p><strong>使用</strong></p>
+<ol>
+<li>学习流水线用法</li>
+</ol>
+<p>学习流水线的用法。</p>
+<ol>
+<li>在作业中调用流水线</li>
+</ol>
+<p>2.1. 插件说明</p>
+<p><img alt="" src="/attachments/20250707002437_wps141.jpg" /></p>
+<p>选择内建插件：flowcaller</p>
+<p>插件内容：</p>
+<pre><code>#!flowcaller     # 插件名称
+flowid: 70       # 流水线编号
+envname: online  # 调用的环境，test为测试环境，online为线上环境
+env:             # 环境变量，没有可以为空
+  foo: ${foo}    # 具体的环境变量，其中${foo}格式的可以从脚本参数自动传递进去
+
+脚本参数： $version $foo_version $foo_rollback_version foo=$foo $ip=$ip
+参数格式说明:
+    $version【固定内容】
+    $foo_version【传递给流水线的发布版本】
+    $foo_rollback_version【传递给流水线的回滚版本】
+    foo=$foo【可以是多个，用于替换插件内容，用于替换流水线变量】
+    $ip=$ip 【固定内容】
+</code></pre>
+<p>2.2. 作业变量说明</p>
+<p><img alt="" src="/attachments/20250707002437_wps142.jpg" /></p>
+<ul>
+<li>
+<p>在执行时变量的顺序会根据描述的文本进行排序。</p>
+</li>
+<li>
+<p>固定变量【点击查看OPEN-C3中的作业变量用法】：</p>
+</li>
+</ul>
+<blockquote>
+<p>version: deploy</p>
+<p><em>rollbackVersion</em>: rollback</p>
+<p>ip: group:val=openc3skipnode</p>
+</blockquote>
+<ul>
+<li>
+<p>非固定变量属于自定义部分，根据实际情况进行配置，如应用群中的发布版本号都一样，就可以配置一样的变量名。</p>
+</li>
+<li>
+<p>添加到轻应用</p>
+</li>
+</ul>
+<p>学习轻应用的用法，把配置的作业添加到轻应用。</p>
+<ol>
+<li>执行</li>
+</ol>
+<p>进到轻应用列表页： </p>
+<p><img alt="" src="/attachments/20250707002437_wps143.jpg" /></p>
+<p>点击进入配置的应用群发布： </p>
+<p><img alt="" src="/attachments/20250707002437_wps144.jpg" /></p>
+<h3 id="137-tsunamiudp">1.3.7 tsunamiudp</h3>
+<p>tsunamiudp 通过UDP协议传输文件，加速文件分发。</p>
+<p>以下说明适用于单机版.</p>
+<p><strong>使用</strong></p>
+<pre><code>1. 使用内建插件tsunamiudp。
+2. 插件参数填写要加速的代理的ip地址，多个地址用英文逗号分隔。
+</code></pre>
+<p><strong>维护</strong></p>
+<ol>
+<li>添加配置</li>
+</ol>
+<p>在配置文件/data/open-c3/Connector/config.inix 中添加如下配置</p>
+<pre><code>tsunamiudp:
+  serverip: 10.x.x.x #tsunamiudp服务端的地址，也就是openc3单机版本的地址。
+</code></pre>
+<ol>
+<li>安装tsunami-udp</li>
+</ol>
+<p>在单机版本和需要加速的代理服务器中安装tsunami-udp。安装方式如下</p>
+<pre><code># cd /data
+# git clone  https://github.com/cheetahmobile/tsunami-udp
+# cd tsunami-udp
+# ./recompile.sh
+#注: 如有报错请请安装工具依赖 yum install autoconf automake libtool
+#安装路径固定在/data目录中。
+</code></pre>
+<ol>
+<li>启动tsunami-udp服务端</li>
+</ol>
+<p>在OPENC3单机版本的宿主机上服务守护进程：</p>
+<p>/opt/mydan/dan/bootstrap/exec/tsunamiudp</p>
+<pre><code>#!/bin/bash
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$MYDanPATH/bin
+
+os=$(uname)
+_exit () { echo $1; sleep 60; exit 1; }
+if [ &quot;x$os&quot; = &quot;x&quot; ];then
+     _exit &quot;uname fail&quot;
+fi
+
+echo &quot;os: $os&quot;;
+if [ &quot;x$os&quot; == &quot;xLinux&quot; ] ;then
+    ulimit -n 655350 || _exit &quot;ulimit -n fail&quot;;
+    ulimit -u 102400 || _exit &quot;ulimit -u fail&quot;;
+    ulimit -s 10240  || _exit &quot;ulimit -s fail&quot;;
+fi
+
+cd /data/open-c3-data/glusterfs/tsunamiudp || _exit &quot;chdir fail&quot;;
+pwd
+
+exec /data/tsunami-udp/server/tsunamid 2&gt;&amp;1
+</code></pre>
+<ol>
+<li>在代理中添加插件</li>
+</ol>
+<pre><code>把OPENC3单机版本的下面文件
+/data/open-c3/JOB/buildin/tsunamiudp.code/tsunami2proxy
+
+拷贝到代理机的如下路径（该文件要有可执行权限）
+/opt/mydan/dan/agent/code/tsunami2proxy
+</code></pre>
+<ol>
+<li>添加网络访问权限</li>
+</ol>
+<p>开放服务端（OPENC3的机器）的51038 TCP端口，允许需要加速的代理机访问。</p>
+<p>开放代理机的51038-51058 UDP端口，允许OPENC3机器访问（服务端）。</p>
+<h3 id="138-localbash">1.3.8 localbash</h3>
+<p>localbash 在C3上执行shell命令。</p>
+<p><strong>使用</strong></p>
+<pre><code>命令会在c3的docker容器中执行该命令。
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+  <footer style="text-align: center; font-size: 0.9em; color: #FFF; padding: 1em;background-color: #3eaae9;">
+    OPEN-C3 © 2025
+  </footer>
+
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

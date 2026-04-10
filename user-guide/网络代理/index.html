@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="lijinfeng2011@gmail.com">
+        <link rel="canonical" href="https://www.open-c3.online/user-guide/%E7%BD%91%E7%BB%9C%E4%BB%A3%E7%90%86/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>1 网络代理 - Open-C3</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Open-C3</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">首页</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../getting-started/" class="nav-link">快速开始</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../" class="nav-link">用户指南</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../dev-guide/" class="nav-link">开发指南</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../%E6%BC%94%E7%A4%BA%E7%8E%AF%E5%A2%83/" class="nav-link">演示环境</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../video-tutorials/" class="nav-link">视频教程</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">关于</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../about/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC/" class="dropdown-item">联系我们</a>
+</li>
+                                    
+<li>
+    <a href="../../about/%E6%AC%A2%E8%BF%8E%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AE/" class="dropdown-item">欢迎参与贡献</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/open-c3/docs/blob/main/docs/user-guide/网络代理.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#1" class="nav-link">1 网络代理</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#11" class="nav-link">1.1 说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#12" class="nav-link">1.2 配置</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#13" class="nav-link">1.3 关于代理的继承</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#14" class="nav-link">1.4 总结</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="1">1 网络代理</h1>
+<h2 id="11">1.1 说明</h2>
+<p>在上一章节的监控中，我们讲到了监控AGENT的安装，同时也讲到了监控AGENT和发布AGENT是两个不同的AGENT。我们讲到我们安装完AGENT之后，Open-C3系统就可以采集所有的主机的监控数据。</p>
+<p>监控AGENT监听端口：65110</p>
+<p>发布AGENT监听端口：65111</p>
+<p>但是现在我们考虑一个问题， 如果企业中划分了很多小的网络，比如VPC，他们之间没有互通怎么办？</p>
+<p>如果你的企业中不存在这个问题，可以跳过这个章节。</p>
+<p>Open-C3的监控和发布的AGENT，内置代理功能，每个隔离的网络区域中，Open-C3只要能访问这个区域里面其中一台机器，监控和发布的AGENT就能正常工作。</p>
+<p>只需要在Open-C3的页面中配置好网段信息，系统就会自动进行代理。</p>
+<h2 id="12">1.2 配置</h2>
+<p>进到“业务管理”-&gt;”代理设置（AGENT安装）”页面。 同时因为代理是和服务树节点是相关的，现在我们配置一个缺省的代理（配置在ROOT服务树节点上）。</p>
+<p>点击右上角的➕按钮创建代理。</p>
+<p><img alt="" src="/attachments/20250706222039_wps35.jpg" /> </p>
+<p>创建代理的时候只需要提供代理的名称</p>
+<p><img alt="" src="/attachments/20250706222039_wps36.jpg" /> </p>
+<p>代理创建完后，我们需要设置代理的IP和代理的网段。代理的IP就是指这个网络不通的区域，我们需要一台机器能同，这个机器就是代理的IP，一般情况下是个公网IP。</p>
+<p><img alt="" src="/attachments/20250706222039_wps37.jpg" /> </p>
+<p>添加完代理IP，我们需要添加代理网关，也就是说，Open-C3在遇到这些网段的时候，会从刚才的代理IP进入。</p>
+<p><img alt="" src="/attachments/20250706222039_wps38.jpg" /> </p>
+<p>网段的配置越精确优先级越高。举个例子：</p>
+<p>比如当前你配置了两个区域：</p>
+<p>区域A: 代理ip是 100.100.100.1 ， 代理的网段是 10.0.0.0/8</p>
+<p>区域B: 代理ip是100.100.100.2, 代理的网段是 10.10.10.0/24</p>
+<p>当监控系统或者发布系统想调用IP 10.10.10.2 时，它可以匹配上区域A和区域B，但是因为区域B描述的网段更精确，所以会选择区域B中的代理ip 100.100.100.2来代理10.10.10.2。</p>
+<h2 id="13">1.3 关于代理的继承</h2>
+<p>这里我以发布AGENT举个例子，比如现在我在服务树节点 ROOT.open-c3.test 上配置了一个主机发布流水线【不是KUBERNETES类型的发布】。</p>
+<p>那么在给要发布的机器发送指令的时候。 Open-C3系统首先会在 ROOT.open-c3.test 节点的代理配置中找是否有匹配的代理，如果没有，会到它的父节点 ROOT.open-c3查找，如果在没有接着往上找，知道找到ROOT节点。</p>
+<p>所以里面存在了一个继承的关系，我们可以在ROOT节点配置全局的代理，如果哪个服务树需要微调，可以在自己本服务树上在进行配置。</p>
+<p>监控代理的说明：</p>
+<p>我们这里可以想到，发布和监控连接主机的区别。发布的时候，因为发布流水线是配置某个服务树上的，发布AGENT调用的时候就可以很明确的匹配到代理的配置【匹配当前服务树节点的代理配置，如果不匹配就往父节点查找，一直查到到ROOT节点】。 但是监控AGENT调用的时候有一个区别。因为服务器节点可以挂在多个服务树下，然后采集监控数据的时候，我们不会做重复的采集，所以一个节点挂在多个服务树上，但是我们只会采集一次。这样就会导致代理配置不明确的问题，比如一个节点挂在两个服务树上，但是两个服务树对该节点的代理配置以哪个为准？对于这种情况，监控系统默认全部从某个服务树节点获取配置，而不在区分资源挂在了哪个服务树下面。该节点默认是ROOT节点，也可以在系统配置中自己定义。</p>
+<p>自定义监控节点的代理服务树节点，到“管理”-&gt;”系统参数”下面进行设置：</p>
+<p><img alt="" src="/attachments/20250706222039_wps39.jpg" /> </p>
+<h2 id="14">1.4 总结</h2>
+<p>代理解决了让Open-C3能调用通所有机器和数据库的问题。有了代理功能，企业在使用多隔离网络区域的情况下，只需要极小的调整，就可以让Open-C3可以访问通所有的资源。同时代理功能可以减少网络传输的流量，在跨区域传输文件的时候，每个区域只需要同步一份数据，然后会自动的在区域内部进行分发。</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+  <footer style="text-align: center; font-size: 0.9em; color: #FFF; padding: 1em;background-color: #3eaae9;">
+    OPEN-C3 © 2025
+  </footer>
+
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
